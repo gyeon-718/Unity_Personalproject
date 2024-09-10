@@ -20,6 +20,7 @@ public class Npc_DetectColider : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player.isWarning = true;
+            ScreenManager.instance.WarningScreen_Active();
             Debug.Log("경고");
         }
     }
@@ -33,6 +34,9 @@ public class Npc_DetectColider : MonoBehaviour
             {
                 Debug.Log("사냥!!!!");
                 Debug.Log(player.isWarning);
+                ScreenManager.instance.WarningScreen_Disactive();
+            ScreenManager.instance.KillingScreen_Active();
+               
             }
         }
     }

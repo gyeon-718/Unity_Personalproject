@@ -21,7 +21,7 @@ public class PlayerIdle : BaseState
 
     public override void Update()
     {
-       // if(playerStateMachine.transform.position)
+       //if(playerStateMachine.transform.position-)
         
         if (Input.GetMouseButton(0))
         {
@@ -69,11 +69,6 @@ public class PlayerIdle : BaseState
     }
 
 
-    private IEnumerator Waitng()
-    {
-        Debug.Log("기다리고");
-        yield return new WaitForSeconds(1.0f);
-    }
 }
 
 
