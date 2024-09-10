@@ -1,0 +1,607 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Player_Upper
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Arrow Indicator
+    m_Weight: 0
+  - m_Path: Arrow Indicator/Arrow Sprite
+    m_Weight: 1
+  - m_Path: AudioListener
+    m_Weight: 0
+  - m_Path: KyleModel
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX
+    m_Weight: 0
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/blood_ShockWave
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/blood_ShockWave/bloodWave_rotated
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/bloodCloud
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/bloodCloud/lightspawner
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/bloodCloud/Point Light
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/bloodSlpash_single
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/bloodSlpash_single/postWave
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/bloodSlpash_single/postWave_01
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/impactMark
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/impactMark/AOE_end
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/impactMark/impactDarkBG
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/impactMark/impactGlow
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/impactMark/impactRadialMarks
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/impactMark/postImpactMarks
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/impactMark/splashParts_mark
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/initialization
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/initialization/Dark
+    m_Weight: 1
+  - m_Path: KyleModel/BloodVFX/VFX_Blood_Explosion_01/initialization/initializationWaves
+    m_Weight: 1
+  - m_Path: KyleModel/DeadBodyPosition
+    m_Weight: 0
+  - m_Path: KyleModel/ForceField
+    m_Weight: 0
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename
+    m_Weight: 0
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose1
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose1/joint2
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose1/joint2/joint3
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose1/joint2/joint3/joint4
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose1/joint2/joint3/joint4/joint5
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose1/joint2/joint3/joint4/joint5/joint6
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose1/joint2/joint3/joint4/joint5/joint6/joint7
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose_IK
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Hose_Rig/Hose_Pole_Vector
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Kyle_HumanUVed
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Kyle_HumanUVed/HeadObjs
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Kyle_HumanUVed/HeadObjs/Eyes
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Kyle_HumanUVed/HeadObjs/Hat
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Kyle_HumanUVed/HeadObjs/Nose_Small
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Kyle_HumanUVed/KyleMain
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleGlobal_Control
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_L_Foot
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_L_Knee
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_L_Leg
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_R_Foot
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_R_Knee
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_R_Leg
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_L_Hip
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_L_Hip/T_L_Knee
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_L_Hip/T_L_Knee/T_L_Foot
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_R_Hip
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_R_Hip/T_R_Knee
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_R_Hip/T_R_Knee/T_R_Foot
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/T_Head_Top
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_L_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_L_Shoulder/T_L_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_L_Shoulder/T_L_Elbow/T_L_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_R_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_R_Shoulder/T_R_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_R_Shoulder/T_R_Elbow/T_R_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate/pCube1
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate/VacumCleaner_ShowerNozzle_Obj
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate/VacumCleaner_ShowerNozzle_Obj/Hose
+      Tip
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate/VacumCleaner_SquareVacuumNozzle_Obj
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Head_T
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Head_T/L_Ear
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Head_T/R_Ear
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Snout
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Snout/T_Nose
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_L_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_L_Shoulder/T_L_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_L_Shoulder/T_L_Elbow/T_L_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_R_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_R_Shoulder/T_R_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/T_R_Shoulder/T_R_Elbow/T_R_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/polySurface10
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/VacuumLight
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/VacuumLight1
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/VacuumLight2
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/VacuumLight3
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/Tail_base
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/Tail_base/T_Tail_p1
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/Tail_base/T_Tail_p1/T_Tail_p2
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/KyleRig/T_Root1/Tail_base/T_Tail_p1/T_Tail_p2/T_Tail_end
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Obj_VacumCleaner
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Obj_VacumCleaner/Obj_Pipe
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/Obj_VacumCleaner/Obj_Strap
+    m_Weight: 1
+  - m_Path: KyleModel/Human_Kyle_Idle_Anim_2Rename/VacucumGloba_Control
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose1
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose1/joint2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose1/joint2/joint3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose1/joint2/joint3/joint4
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose1/joint2/joint3/joint4/joint5
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose1/joint2/joint3/joint4/joint5/joint6
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose1/joint2/joint3/joint4/joint5/joint6/joint7
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Hose_IK
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_L_Leg
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_R_Leg
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_L_Hip
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_L_Hip/T_L_Knee
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_L_Hip/T_L_Knee/T_L_Foot
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_R_Hip
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_R_Hip/T_R_Knee
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_R_Hip/T_R_Knee/T_R_Foot
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/L_Ear1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/L_Ear1/L_Ear2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/L_Ear1/L_Ear2/L_Ear3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/R_Ear1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/R_Ear1/R_Ear2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/R_Ear1/R_Ear2/R_Ear3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/T_Head_Top
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Jaw
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Jaw/T_Nose
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_L_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_L_Shoulder/T_L_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_L_Shoulder/T_L_Elbow/T_L_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_R_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_R_Shoulder/T_R_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_R_Shoulder/T_R_Elbow/T_R_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Tail_B
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Tail_B/T_Tail_Mid
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Tail_B/T_Tail_Mid/T_Tail_Mid_2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root/T_Tail_B/T_Tail_Mid/T_Tail_Mid_2/T_Tail_End
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner/Kyle_BackpackAddition
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner/Kyle_BackpackAddition/polySurface10
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner/Kyle_BackpackAddition/VacuumLight
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner/Kyle_BackpackAddition/VacuumLight1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner/Kyle_BackpackAddition/VacuumLight2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner/Kyle_BackpackAddition/VacuumLight3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner/Obj_Pipe
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner/Obj_Strap
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Obj_VacumCleaner/VacumIntake
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Head_T
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Head_T/Eyes
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Head_T/Hat
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Main1
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Main1/Body
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Main1/Head
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Miss Bag
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New/C_Criiter_Miss
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New/Critter_Bag_Miss
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New/J_Critter_Miss
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Anim 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New/Miss_Deforms
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Global_Control
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose1/joint2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose1/joint2/joint3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose1/joint2/joint3/joint4
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose1/joint2/joint3/joint4/joint5
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose1/joint2/joint3/joint4/joint5/joint6
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose1/joint2/joint3/joint4/joint5/joint6/joint7
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose_IK
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Hose_Rig/Hose_Pole_Vector
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_L_Foot
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_L_Knee
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_L_Leg
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_R_Foot
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_R_Knee
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_R_Leg
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_L_Hip
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_L_Hip/T_L_Knee
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_L_Hip/T_L_Knee/T_L_Foot
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_R_Hip
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_R_Hip/T_R_Knee
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_R_Hip/T_R_Knee/T_R_Foot
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/L_Ear1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/L_Ear1/L_Ear2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/L_Ear1/L_Ear2/L_Ear3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/R_Ear1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/R_Ear1/R_Ear2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/R_Ear1/R_Ear2/R_Ear3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Head_Mid/T_Head_Top
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Jaw
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_Head_Bottom/T_Head_Jaw/T_Jaw/T_Nose
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_L_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_L_Shoulder/T_L_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_L_Shoulder/T_L_Elbow/T_L_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_R_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_R_Shoulder/T_R_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Spine/T_Spine2/T_Spine3/T_R_Shoulder/T_R_Elbow/T_R_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Tail_B
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Tail_B/T_Tail_Mid
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Tail_B/T_Tail_Mid/T_Tail_Mid_2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root/T_Tail_B/T_Tail_Mid/T_Tail_Mid_2/T_Tail_End
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate/pCube1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate/VacumCleaner_ShowerNozzle_Obj
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate/VacumCleaner_ShowerNozzle_Obj/Hose
+      Tip
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Hose/HoseRotate/VacumCleaner_SquareVacuumNozzle_Obj
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Head_T
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Head_T/L_Ear
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Head_T/R_Ear
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Snout
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_Head_B/T_Snout/T_Nose
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_L_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_L_Shoulder/T_L_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_L_Shoulder/T_L_Elbow/T_L_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_R_Shoulder
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_R_Shoulder/T_R_Elbow
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/T_R_Shoulder/T_R_Elbow/T_R_Hand
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/polySurface10
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/VacuumLight
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/VacuumLight1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/VacuumLight2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/T_Spine/T_Shoulders/Vaccum_Pack/Kyle_BackpackAddition/VacuumLight3
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/Tail_base
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/Tail_base/T_Tail_p1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/Tail_base/T_Tail_p1/T_Tail_p2
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/KyleRig/T_Root1/Tail_base/T_Tail_p1/T_Tail_p2/T_Tail_end
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Main1
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Main1/Body
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Main1/Eyes
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Main1/Hat
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Main1/Head
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Miss Bag
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New/C_Criiter_Miss
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New/Critter_Bag_Miss
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New/J_Critter_Miss
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Miss Bag/Critter_Bag_Miss_Knapper_Bag_Anim_New/Miss_Deforms
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Obj_VacumCleaner
+    m_Weight: 0
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Obj_VacumCleaner/Obj_Pipe
+    m_Weight: 1
+  - m_Path: KyleModel/Kyle_Idle_Prefab_407 1/Obj_VacumCleaner/Obj_Strap
+    m_Weight: 1
+  - m_Path: KyleModel/NPC Look At Point
+    m_Weight: 0
+  - m_Path: KyleModel/PlayerRigidBody
+    m_Weight: 0
+  - m_Path: KyleModel/PowerWasher
+    m_Weight: 0
+  - m_Path: KyleModel/PowerWasher/Handle
+    m_Weight: 1
+  - m_Path: KyleModel/PowerWasher/Handle/Cylinder
+    m_Weight: 1
+  - m_Path: KyleModel/PowerWasher/Handle/Hose
+    m_Weight: 1
+  - m_Path: KyleModel/PowerWasher/ParticleSystems
+    m_Weight: 1
+  - m_Path: KyleModel/PowerWasher/ParticleSystems/GroundHit Particle System
+    m_Weight: 1
+  - m_Path: KyleModel/PowerWasher/ParticleSystems/Length Particle System
+    m_Weight: 1
+  - m_Path: KyleModel/PowerWasher/ParticleSystems/WallHit Particle System
+    m_Weight: 1
+  - m_Path: KyleModel/PowerWasher/powerWasherTriggerWall
+    m_Weight: 1
+  - m_Path: KyleModel/TutorialRadius
+    m_Weight: 0
+  - m_Path: KyleModel/Vacuum
+    m_Weight: 0
+  - m_Path: KyleModel/Vacuum/Handle
+    m_Weight: 1
+  - m_Path: KyleModel/Vacuum/Handle/HoldPosition
+    m_Weight: 1
+  - m_Path: KyleModel/Vacuum/VacuumVFX
+    m_Weight: 1
