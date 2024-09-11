@@ -21,47 +21,54 @@ public class PlayerIdle : BaseState
 
     public override void Update()
     {
-       //if(playerStateMachine.transform.position-)
-        
-        if (Input.GetMouseButton(0))
+        if (playerStateMachine.isWarningEnd)
         {
-            switch (playerStateMachine.playerType)
-            {
-                case PlayerType.Vacuum:
-                    playerStateMachine.ChangeState(new PlayerVacuum(stateMachine, player));
-                    break;
-                case PlayerType.Wash:
-                    playerStateMachine.ChangeState(new PlayerWash(stateMachine, player));
-                    break;
-            }
+            playerStateMachine.ChangeState(new PlayerAttack_Start(stateMachine, player));
         }
-
-        else if (Input.GetKeyDown(KeyCode.Q))
+        else
         {
-            playerStateMachine.player_ani.SetTrigger("isSwitching");
+
+            if (Input.GetMouseButton(0))
+            {
+                switch (playerStateMachine.playerType)
+                {
+                    case PlayerType.Vacuum:
+                        playerStateMachine.ChangeState(new PlayerVacuum(stateMachine, player));
+                        break;
+                    case PlayerType.Wash:
+                        playerStateMachine.ChangeState(new PlayerWash(stateMachine, player));
+                        break;
+                }
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Q))
+            {
+                playerStateMachine.player_ani.SetTrigger("isSwitching");
                 switch (playerStateMachine.playerType)
                 {
                     case PlayerType.Wash:
                         playerStateMachine.playerType = PlayerType.Vacuum;
                         playerStateMachine.vacuumNozzle.SetActive(true);
                         playerStateMachine.washerNozzle.SetActive(false);
-                    break;
+                        break;
                     case PlayerType.Vacuum:
                         playerStateMachine.playerType = PlayerType.Wash;
                         playerStateMachine.vacuumNozzle.SetActive(false);
                         playerStateMachine.washerNozzle.SetActive(true);
-                    break;
+                        break;
                 }
-        }
-
-        else
-        {
-            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
-            {
-                playerStateMachine.ChangeState(new PlayerWalk(stateMachine, player));
             }
+
+            else
+            {
+                if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+                {
+                    playerStateMachine.ChangeState(new PlayerWalk(stateMachine, player));
+                }
+            }
+
         }
-    }
+        }
 
     public override void Exit()
     {

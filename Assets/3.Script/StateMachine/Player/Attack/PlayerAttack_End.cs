@@ -18,6 +18,8 @@ public class PlayerAttack_End : BaseState
     public override void Enter()
     {
         playerStateMachine.PlayAnimation("Attack_End");
+        ScreenManager.instance.KillingScreen_Active();
+        Debug.Log("어택앤드");
         // 애니메이션
     }
 
@@ -32,7 +34,11 @@ public class PlayerAttack_End : BaseState
 
     public override void Exit()
     {
-        ScreenManager.instance.KillingScreen_Active();
+        ScreenManager.instance.WarningScreen_Disactive();
+        playerStateMachine.isWarningEnd = false;
+
+        playerStateMachine.npc.gameObject.SetActive(false);  // 임시
+
     }
 
 

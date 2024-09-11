@@ -6,6 +6,7 @@ public class PlayerAttack_Start : BaseState
 {
     private Transform player;
     private PlayerStateMachine playerStateMachine;
+    private Transform targetNPC;
 
 
     public PlayerAttack_Start(StateMachine stateMachine, Transform _player) : base("PlayerAttack_Start", stateMachine)
@@ -18,6 +19,7 @@ public class PlayerAttack_Start : BaseState
     public override void Enter()
     {
         playerStateMachine.PlayAnimation("Attack_Start");
+        Debug.Log("어택스타트");
         // 애니메이션
     }
 

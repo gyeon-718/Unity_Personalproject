@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 public enum PlayerType
@@ -11,6 +12,7 @@ public enum PlayerType
 public class PlayerStateMachine : StateMachine
 {
     public Transform player;
+    public Transform npc;
     public Animator player_ani;
     public PlayerType playerType;
     public ParticleSystem vacuumParticle;
@@ -22,10 +24,12 @@ public class PlayerStateMachine : StateMachine
     public GameObject vacuumNozzle;
     public GameObject washerNozzle;
 
+    public NavMeshAgent navmeshAgent;
+
     public GameObject cleanRange;
     public bool isCleanRangeActive = false;
     public bool ischanging = false;
-    public bool isWarning = false;
+    public bool isWarningEnd = false;
     protected override BaseState GetInitialState()
     {
         return new PlayerIdle(this, player);
@@ -35,18 +39,20 @@ public class PlayerStateMachine : StateMachine
         playerType = PlayerType.Vacuum;
         player_ani = GetComponent<Animator>();
         npcs = GameObject.FindGameObjectsWithTag("NPC");
-    //    for(int i=0;i<npcs.Length;i++)
-    //    {
-    //        Debug.Log(npcs[i]);
-    //    }
-        
+        navmeshAgent = GetComponentInChildren<NavMeshAgent>();
+        navmeshAgent.enabled = false;
+        //    for(int i=0;i<npcs.Length;i++)
+        //    {
+        //        Debug.Log(npcs[i]);
+        //    }
+
         base.Start();
     }
 
     private void Update()
     {
         base.Update();
-        
+
     }
 
 
@@ -58,7 +64,6 @@ public class PlayerStateMachine : StateMachine
     public bool isAnimationEnd(string animationName)
     {
         AnimatorStateInfo stateInfo = player_ani.GetCurrentAnimatorStateInfo(0);
-        Debug.Log(stateInfo);
         return stateInfo.IsName(animationName) && stateInfo.normalizedTime >= 1.0f;
     }
 }
