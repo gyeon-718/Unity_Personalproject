@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f105e092526beffbf46113aca93627, type: 3}
+  m_Name: Person_Charlie
+  m_EditorClassIdentifier:
+  npcName: Charlie
+  useMaleVO: 1
+  npcMaterial: {fileID: 0}
+  deadBodyInfo: {fileID: 11400000, guid: bfd6dcd6db5f88e4fa35cb2586769db9, type: 2}
+  npcCustomizations:
+  - npcCustomizationName: Body
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 4300000, guid: 4ebcf3af98c3ff544a5f929109f193f3, type: 2}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: 67739939e00c8fa4c820f9178ab3945a, type: 2}
+  - npcCustomizationName: Eyes
+    npcParentBoneName: NPC_Joint_Head_Tip
+    npcCustomizeMesh: {fileID: 0}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: c472487317f59d34b902a88e004fe799, type: 2}
+  - npcCustomizationName: Hair
+    npcParentBoneName: NPC_Joint_Head_Tip
+    npcCustomizeMesh: {fileID: 4300000, guid: ad173caa3ccccc4459bd5d11fa732abf, type: 2}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: d0c35396aa978944b80244ffcd5c688a, type: 2}
+  - npcCustomizationName: Nose
+    npcParentBoneName: NPC_Joint_Head
+    npcCustomizeMesh: {fileID: 4300000, guid: 18da3666d3fbcd14cbcc4403f66f1019, type: 2}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: 65b2b675bcb6c9b4c92830b55d4e3b4b, type: 2}
+  - npcCustomizationName: Head Accessory
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 0}
+    npcCustomizeMaterials: []
+  - npcCustomizationName: Face Accessory
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 0}
+    npcCustomizeMaterials: []
+  - npcCustomizationName: Left Wrist Eccessory
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 0}
+    npcCustomizeMaterials: []
+  - npcCustomizationName: Right Wrist Eccessory
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 0}
+    npcCustomizeMaterials: []

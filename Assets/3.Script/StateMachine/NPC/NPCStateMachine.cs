@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum NPCType
+{
+    ALIVE,
+    DEAD
+};
 public class NPCStateMachine : StateMachine
 {
     public Transform npc;

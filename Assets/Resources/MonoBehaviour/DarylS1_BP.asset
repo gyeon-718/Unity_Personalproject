@@ -1,0 +1,383 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2f113ccc827952e7105be3dcadba91, type: 3}
+  m_Name: DarylS1_BP
+  m_EditorClassIdentifier:
+  clips:
+  - {fileID: 8300000, guid: 1c0daad5e70435a4fbb8ef36ea69da7f, type: 3}
+  - {fileID: 8300000, guid: ad32469f877d0a1458db03e79984b456, type: 3}
+  - {fileID: 8300000, guid: 793b14e3b8ae43647b9e28b2bb95bfe8, type: 3}
+  - {fileID: 8300000, guid: 58b3ad7f238a5f741a891b4946487311, type: 3}
+  - {fileID: 8300000, guid: 4b9f55904b8a6e04788b1e5a5789a200, type: 3}
+  - {fileID: 8300000, guid: 4b9f55904b8a6e04788b1e5a5789a200, type: 3}
+  - {fileID: 8300000, guid: 466a5d04f629ed841b6f45055c936eb3, type: 3}
+  - {fileID: 8300000, guid: 7f12633a546a5804b8071b899e61e78a, type: 3}
+  - {fileID: 8300000, guid: 93df06be8fb090d4e9b530de4d4a6ba6, type: 3}
+  syllables:
+  - identifier: 0
+    clipIndex: 3
+    startTime: 1.11
+    length: 0.15000007
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_0_1
+    clipIndex: 0
+    startTime: 10.04
+    length: 1.4
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_0_2
+    clipIndex: 0
+    startTime: 1.8899999
+    length: 0.85999995
+    volumeAdjustment: -0.4
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_1_1
+    clipIndex: 0
+    startTime: 5.269999
+    length: 3.9219985
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_1_2
+    clipIndex: 0
+    startTime: 7.5799985
+    length: 2.7779999
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_1_3
+    clipIndex: 0
+    startTime: 2.833
+    length: 2.295
+    volumeAdjustment: -0.4
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_1_4
+    clipIndex: 1
+    startTime: 8.18
+    length: 2.92
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_2_1
+    clipIndex: 1
+    startTime: 19.677
+    length: 4.2
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_2_2
+    clipIndex: 1
+    startTime: 11.17
+    length: 4.0300007
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_2_3
+    clipIndex: 1
+    startTime: 4.249999
+    length: 3.72
+    volumeAdjustment: -0.109999985
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_0_1
+    clipIndex: 3
+    startTime: 3.33
+    length: 1.57
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_1_1
+    clipIndex: 2
+    startTime: 26.3
+    length: 3.34
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_1_2
+    clipIndex: 2
+    startTime: 21.19
+    length: 2.64
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_1_3
+    clipIndex: 2
+    startTime: 23.86
+    length: 2.47
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_1_4
+    clipIndex: 2
+    startTime: 5.74
+    length: 2.33
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_1_5
+    clipIndex: 3
+    startTime: 16.39
+    length: 2.88
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_1_6
+    clipIndex: 3
+    startTime: 20.769999
+    length: 3.01
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_1_7
+    clipIndex: 3
+    startTime: 11.57
+    length: 3.23
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_2_1
+    clipIndex: 2
+    startTime: 8.099999
+    length: 4.5500007
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_2_2
+    clipIndex: 2
+    startTime: 4.05
+    length: 4
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_2_3
+    clipIndex: 3
+    startTime: 7.52
+    length: 3.8699996
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_3_1
+    clipIndex: 2
+    startTime: 12.64
+    length: 5.01
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_1
+    clipIndex: 5
+    startTime: 12.77
+    length: 1.25
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_2
+    clipIndex: 6
+    startTime: 10.039997
+    length: 0.92
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_1
+    clipIndex: 5
+    startTime: 9.29
+    length: 3.33
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_2
+    clipIndex: 5
+    startTime: 4.97
+    length: 3.5500002
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_3
+    clipIndex: 5
+    startTime: 1.265
+    length: 3.4199998
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_4
+    clipIndex: 6
+    startTime: 7.27
+    length: 2.15
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_5
+    clipIndex: 6
+    startTime: 13.630005
+    length: 2.3200011
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_6
+    clipIndex: 6
+    startTime: 12.27
+    length: 3.69
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_2_1
+    clipIndex: 6
+    startTime: 15.93
+    length: 4.64
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_3_1
+    clipIndex: 6
+    startTime: 1.54
+    length: 5.7
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: P_1_1
+    clipIndex: 7
+    startTime: 5.96
+    length: 3.45
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: P_1_2
+    clipIndex: 7
+    startTime: 16.44
+    length: 2.94
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: P_2_1
+    clipIndex: 7
+    startTime: 1.15
+    length: 3.82
+    volumeAdjustment: -0.5
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: P_2_2
+    clipIndex: 7
+    startTime: 9.65
+    length: 4.32
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: S_1
+    clipIndex: 8
+    startTime: 0.75
+    length: 1.25
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: S_2
+    clipIndex: 8
+    startTime: 3.09
+    length: 1.25
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: S_3
+    clipIndex: 8
+    startTime: 5.07
+    length: 1.13
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: S_4
+    clipIndex: 8
+    startTime: 6.799999
+    length: 1.1999999
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: S_5
+    clipIndex: 8
+    startTime: 8.94
+    length: 1.09
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: E_1_5
+    clipIndex: 0
+    startTime: 0.38
+    length: 3.16
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_0_2
+    clipIndex: 2
+    startTime: 3.25
+    length: 0.74
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: F_2_4
+    clipIndex: 2
+    startTime: 9.14
+    length: 1.69
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  testString: F_0_2 0 F_2_4
+  syllableGap: -0.01
+  restGap: 0.1
+  defaultFadeIn: 0.03
+  defaultFadeOut: 0.03
+  testSyllableId: b

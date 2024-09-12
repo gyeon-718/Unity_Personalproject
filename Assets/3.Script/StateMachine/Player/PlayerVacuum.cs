@@ -30,26 +30,33 @@ public class PlayerVacuum : BaseState
     public override void Update()
     {
         Move();
-        // 마우스 떼면 상태 나가기
-        if (!Input.GetMouseButton(0))
+        if (playerStateMachine.isWarningEnd)
         {
-            if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
-            {
-                playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
-            }
-            else
-            {
-                playerStateMachine.ChangeState(new PlayerWalk(stateMachine, player));
-            }
-
+            playerStateMachine.ChangeState(new PlayerAttack_Start(stateMachine, player));
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        else
         {
-            playerStateMachine.player_ani.SetTrigger("isSwitching");
-            playerStateMachine.playerType = PlayerType.Wash;
-            playerStateMachine.vacuumNozzle.SetActive(false);
-            playerStateMachine.washerNozzle.SetActive(true);
-            playerStateMachine.ChangeState(new PlayerWash(stateMachine, player));
+            // 마우스 떼면 상태 나가기
+            if (!Input.GetMouseButton(0))
+            {
+                if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+                {
+                    playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
+                }
+                else
+                {
+                    playerStateMachine.ChangeState(new PlayerWalk(stateMachine, player));
+                }
+
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                playerStateMachine.player_ani.SetTrigger("isSwitching");
+                playerStateMachine.playerType = PlayerType.Wash;
+                playerStateMachine.vacuumNozzle.SetActive(false);
+                playerStateMachine.washerNozzle.SetActive(true);
+                playerStateMachine.ChangeState(new PlayerWash(stateMachine, player));
+            }
         }
     }
 

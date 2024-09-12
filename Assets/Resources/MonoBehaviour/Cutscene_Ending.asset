@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c9355e61c4097a8c2712eb69f262fe, type: 3}
+  m_Name: Cutscene_Ending
+  m_EditorClassIdentifier:
+  name: Dangerous Game
+  sceneName: Ending Cutscene
+  kyleMumbles: {fileID: 0}
+  darylMumbles: {fileID: 0}
+  kyleSimlishProfile: {fileID: 0}
+  darylSimlishProfile: {fileID: 0}
+  unnoticed: []
+  levelID: ending_cutscene
+  prevClockIn: {fileID: 0}
+  prevLevel: {fileID: 0}
+  type: 1
+  CollectibleDescription: Oh my god, oh god... Daryl?! DARYL?!
+  CollectibleImage: {fileID: 21300000, guid: 7259edcbf0cab0c4eacca463f82f2e5d, type: 2}

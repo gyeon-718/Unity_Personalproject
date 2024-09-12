@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c9355e61c4097a8c2712eb69f262fe, type: 3}
+  m_Name: ClockIn5
+  m_EditorClassIdentifier:
+  name: Friday Clock-In
+  sceneName: ClockIn5
+  kyleMumbles: {fileID: 11400000, guid: a183cdcc5c8494744a81c4cf7a9bd6df, type: 2}
+  darylMumbles: {fileID: 11400000, guid: 30d6da500350b324e9adfe3a46d89e48, type: 2}
+  kyleSimlishProfile: {fileID: 11400000, guid: e502ec0e46e87624ba356fea97c87cd7, type: 2}
+  darylSimlishProfile: {fileID: 11400000, guid: 13f7af352bba08c4fa57ba6f097bca3c, type: 2}
+  unnoticed:
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 5
+    text: KYLE! HOLD IT RIGHT THERE!
+    soundType: 1
+    simlishString: H_1
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 4
+    darylExpression: 0
+    text: W-WHAT’S WRONG, DARYL?!
+    soundType: 1
+    simlishString: PN_0_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 3
+    text: Kyle, I WAS WRONG! I’ve been wrong the whole time! This thing in the office isn’t just some wild animal.
+    soundType: 1
+    simlishString: F_1_1 0 F_1_2
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 3
+    text: 'Think about it: This creature is in an unfamiliar place. No wild animal in an unfamiliar layout could stay out of sight AND hide any trace of itself all at once...'
+    soundType: 1
+    simlishString: F_2_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 12
+    text: It’s something much smarter, much more dangerous than I anticipated. It might be a true monster we’re dealing with.
+    soundType: 1
+    simlishString: U_2_2
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 3
+    text: I’m adjusting my special project to be better suited for…
+    soundType: 1
+    simlishString: U_1_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 5
+    text: ... bigger targets.
+    soundType: 1
+    simlishString: U_0_1
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 5
+    darylExpression: 0
+    text: HAHA, oh jeez Daryl you- you must really have your work c-cut out for you then. H-Hey I really should get to work so I can finish my shift on ti-
+    soundType: 1
+    simlishString: PN_1_4
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 8
+    text: Be careful in the office, Kyle. I went out and caught a whole bunch of critters and set them loose in there!
+    soundType: 1
+    simlishString: F_1_4
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 4
+    darylExpression: 0
+    text: ...
+    soundType: 1
+    simlishString: 0
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 5
+    text: ...to act as bait for the monster, of course!
+    soundType: 1
+    simlishString: W_1_3
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 5
+    darylExpression: 0
+    text: HUH?! Y-Yeah uh- of course. Yeah, thanks for the warning Daryl.
+    soundType: 1
+    simlishString: PN_1_6
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 3
+    text: I’ll catch that monster if it’s the last thing I do...
+    soundType: 1
+    simlishString: W_1_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 8
+    text: See ya tomorrow, bud!
+    soundType: 1
+    simlishString: S_1
+    voiceLine: {fileID: 0}
+  levelID: clockIn5
+  prevClockIn: {fileID: 11400000, guid: f3fcb8d14e85f2e41a0d93fcf11ab413, type: 2}
+  prevLevel: {fileID: 11400000, guid: 2ec89fe83d8f0cf4e97ce10f197d2e31, type: 2}
+  type: 0
+  CollectibleDescription:
+  CollectibleImage: {fileID: 0}

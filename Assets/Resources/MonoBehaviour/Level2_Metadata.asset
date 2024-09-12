@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede46eedd4150b4e7446289b35d88d09, type: 3}
+  m_Name: Level2_Metadata
+  m_EditorClassIdentifier:
+  levelName: Tuesday
+  levelNumber: 2
+  clockIn: {fileID: 11400000, guid: 2e213fbe94bc7bc438025586b55193fd, type: 2}
+  nextCutscene: {fileID: 0}
+  lockCameraDuringClockIn: 0
+  isDarylLevel: 0
+  isDarylCleanup: 0
+  fiveTime: 75
+  fourTime: 150
+  threeTime: 200
+  twoTime: 300
+  timerLength: 360
+  description: 'This is awful! I need to work while in my wolf form! This is dangerous... I need to avoid anyone working in the office. Remember: It’s all for that sweet, sweet paycheck.'
+  previewImage: {fileID: 21300000, guid: 9f26d52454ed4d6498f3f5f1d0aafabf, type: 2}
+  sceneName: Level_2_V2
+  nextLevel: {fileID: 11400000, guid: e52b454e5794b114785faf7bfdd2d2ee, type: 2}
+  levelID: level2_sampleid
+  toolsUnlocked: []
+  tutorialInterstitial: {fileID: 21300000, guid: f59336e3cbe643248849c89d9648cc9d, type: 2}
+  tutorialInterstitialController: {fileID: 21300000, guid: f59336e3cbe643248849c89d9648cc9d, type: 2}
+  tutorialInterstitialMobile: {fileID: 21300000, guid: f59336e3cbe643248849c89d9648cc9d, type: 2}
+  minimap: {fileID: 21300000, guid: ee5ba982944914e4daaedfb679cbf3ec, type: 2}
+  isHumanLevel: 0

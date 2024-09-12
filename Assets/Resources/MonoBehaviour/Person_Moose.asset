@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f105e092526beffbf46113aca93627, type: 3}
+  m_Name: Person_Moose
+  m_EditorClassIdentifier:
+  npcName: Mason
+  useMaleVO: 1
+  npcMaterial: {fileID: 0}
+  deadBodyInfo: {fileID: 11400000, guid: 880e39d7debb5c8468720fe741f71cc3, type: 2}
+  npcCustomizations:
+  - npcCustomizationName: Body
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 4300000, guid: 4ebcf3af98c3ff544a5f929109f193f3, type: 2}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: c6f18764ed780da49ad6e5f558c2687f, type: 2}
+  - npcCustomizationName: Eyes
+    npcParentBoneName: NPC_Joint_Head_Tip
+    npcCustomizeMesh: {fileID: 0}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: c472487317f59d34b902a88e004fe799, type: 2}
+  - npcCustomizationName: Hair
+    npcParentBoneName: NPC_Joint_Head_Tip
+    npcCustomizeMesh: {fileID: 4300000, guid: a5714016d51b8274f8f254dff655408b, type: 2}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: 6f6f7626bb3516b48bb62c9998d7b822, type: 2}
+    - {fileID: 2100000, guid: 1b2e9a80eeb01ff4eb90f701dcec6438, type: 2}
+  - npcCustomizationName: Nose
+    npcParentBoneName: NPC_Joint_Head
+    npcCustomizeMesh: {fileID: 4300000, guid: 81728bd0eb2a67545976044ac19c411f, type: 2}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: 48e245fdd606da74aab32c36da5fef0d, type: 2}
+  - npcCustomizationName: Head Accessory
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 4300000, guid: 74313cb08ebaaa848b61ac68f94dade3, type: 2}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: e3bf96733b2f05d45abe51e5787424c9, type: 2}
+    - {fileID: 2100000, guid: 64e0f4cd04760eb4a8d4d629daed73e3, type: 2}
+  - npcCustomizationName: Face Accessory
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 4300000, guid: 58b3c94de663399439422856751e6249, type: 2}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: 006458d9d7401d14792a9bd4b1abc126, type: 2}
+    - {fileID: 2100000, guid: a4f107a30fe9268489856c1296389b01, type: 2}
+    - {fileID: 2100000, guid: 1b2e9a80eeb01ff4eb90f701dcec6438, type: 2}
+  - npcCustomizationName: Chest Accessory
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 0}
+    npcCustomizeMaterials:
+    - {fileID: 2100000, guid: 28c7f5cf4ef0d9449a3145cbf6456bbb, type: 2}
+  - npcCustomizationName: Left Wrist Eccessory
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 0}
+    npcCustomizeMaterials: []
+  - npcCustomizationName: Right Wrist Eccessory
+    npcParentBoneName:
+    npcCustomizeMesh: {fileID: 0}
+    npcCustomizeMaterials: []

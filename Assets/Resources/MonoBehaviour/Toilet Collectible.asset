@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9e0d32b41b10380971ccd4675aec4e, type: 3}
+  m_Name: Toilet Collectible
+  m_EditorClassIdentifier:
+  name: Deluxe Toilet Paper Roll
+  description: 'I finally got my hands on it: The Mega Deluxe Soft 21-Ply Toilet Paper Roll. The company only restocks the office with one of these rolls every month. The rest of the bathrooms have normal toilet paper, probably because it’s always a battle between employees to steal this legendary toilet paper for themselves. This time... It’s mine. MINE! '
+  image: {fileID: 21300000, guid: ca11803c1749a514b8ef37b0d07b08fa, type: 2}
+  collectibleID: id_toilet

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c9355e61c4097a8c2712eb69f262fe, type: 3}
+  m_Name: Seung's Sample Clock In 1
+  m_EditorClassIdentifier:
+  name: Cutscene
+  sceneName: Cutscene
+  kyleMumbles: {fileID: 0}
+  darylMumbles: {fileID: 0}
+  kyleSimlishProfile: {fileID: 0}
+  darylSimlishProfile: {fileID: 0}
+  unnoticed:
+  - speaker: 0
+    kyleExpression: 0
+    darylExpression: 0
+    text: Hello! This is clock in 1
+    soundType: 0
+    simlishString:
+    voiceLine: {fileID: 0}
+  levelID: seung_sample1
+  prevClockIn: {fileID: 0}
+  prevLevel: {fileID: 11400000, guid: a041c165680310040803a4a38b1daaee, type: 2}
+  type: 0
+  CollectibleDescription:
+  CollectibleImage: {fileID: 0}

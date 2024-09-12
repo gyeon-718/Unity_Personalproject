@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede46eedd4150b4e7446289b35d88d09, type: 3}
+  m_Name: Level3_Metadata
+  m_EditorClassIdentifier:
+  levelName: Wednesday
+  levelNumber: 3
+  clockIn: {fileID: 11400000, guid: 71aa11608d66504459939d89fb7e7b42, type: 2}
+  nextCutscene: {fileID: 0}
+  lockCameraDuringClockIn: 0
+  isDarylLevel: 0
+  isDarylCleanup: 0
+  fiveTime: 75
+  fourTime: 135
+  threeTime: 200
+  twoTime: 300
+  timerLength: 360
+  description: Looks like there’s no getting past Daryl. I’ll need to keep up appearances until this whole mess is over. He doesn’t seem to suspect anything, but I should still be careful.
+  previewImage: {fileID: 21300000, guid: 9f26d52454ed4d6498f3f5f1d0aafabf, type: 2}
+  sceneName: Level_3_V2
+  nextLevel: {fileID: 11400000, guid: 2ec89fe83d8f0cf4e97ce10f197d2e31, type: 2}
+  levelID: level3_sampleid
+  toolsUnlocked:
+  - Vacuum
+  tutorialInterstitial: {fileID: 21300000, guid: 219e91256fa308140bf0041cfa821955, type: 2}
+  tutorialInterstitialController: {fileID: 21300000, guid: c50c89bc94ffeb44595d729a1fa7d40a, type: 2}
+  tutorialInterstitialMobile: {fileID: 21300000, guid: 8d0f052f412411d41849422765b7ff35, type: 2}
+  minimap: {fileID: 21300000, guid: 5fbc33538bb12d1408d2efd9624f63a2, type: 2}
+  isHumanLevel: 0

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c9355e61c4097a8c2712eb69f262fe, type: 3}
+  m_Name: ClockIn2
+  m_EditorClassIdentifier:
+  name: Tuesday Clock-In
+  sceneName: ClockIn2
+  kyleMumbles: {fileID: 11400000, guid: a183cdcc5c8494744a81c4cf7a9bd6df, type: 2}
+  darylMumbles: {fileID: 11400000, guid: 30d6da500350b324e9adfe3a46d89e48, type: 2}
+  kyleSimlishProfile: {fileID: 11400000, guid: e502ec0e46e87624ba356fea97c87cd7, type: 2}
+  darylSimlishProfile: {fileID: 11400000, guid: 540c5a016285b8940a586451cd89df1a, type: 2}
+  unnoticed:
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 10
+    text: HOLD IT! Just because it’s late at night doesn’t mean you should walk by without saying hey.
+    soundType: 1
+    simlishString: N_1_3
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 1
+    darylExpression: 0
+    text: ... Er... uh... hey D-Daryl.
+    soundType: 1
+    simlishString: N_0_5 0 N_0_3
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 0
+    text: Kyle! Glad I have someone to talk to. Are you feeling under the weather? You sound a little different.
+    soundType: 1
+    simlishString: F_0_1 0 0 F_1_2
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 1
+    darylExpression: 0
+    text: I-It must be because of the intercom...
+    soundType: 1
+    simlishString: PN_1_5
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 2
+    darylExpression: 0
+    text: T-This whole ‘unpaid overtime’ situation isn’t great...
+    soundType: 1
+    simlishString: P_1_3
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 9
+    text: Hard to disagree with ya there. They got me cooped up in this small security office guarding the main elevator entrance. But no complaints here. I’m gonna keep an eye out like I always do!
+    soundType: 1
+    simlishString: N_1_4 0 N_2_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 0
+    text: With the CEO overworking everyone, I’m sure the office will only get more bustling as we get closer to the end of the week.
+    soundType: 1
+    simlishString: N_1_3 0 N_1_5
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 1
+    darylExpression: 0
+    text: Oh boy...
+    soundType: 1
+    simlishString: O_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 10
+    text: Since we’re working nights now, I’m gonna make sure to keep an extra big eye out for anything suspicious this week.
+    soundType: 1
+    simlishString: N_1_2
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 7
+    text: I better let you get to it. See ya tomorrow, bud!
+    soundType: 1
+    simlishString: F_1_2 0 0 S_5
+    voiceLine: {fileID: 0}
+  levelID: clockIn2
+  prevClockIn: {fileID: 11400000, guid: bb844af159704b3498c2b9ddf9f527b9, type: 2}
+  prevLevel: {fileID: 11400000, guid: a041c165680310040803a4a38b1daaee, type: 2}
+  type: 0
+  CollectibleDescription:
+  CollectibleImage: {fileID: 0}

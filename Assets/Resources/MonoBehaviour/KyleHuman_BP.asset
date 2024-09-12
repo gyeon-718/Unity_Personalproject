@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2f113ccc827952e7105be3dcadba91, type: 3}
+  m_Name: KyleHuman_BP
+  m_EditorClassIdentifier:
+  clips:
+  - {fileID: 8300000, guid: 51f2a1866c9b2be4bbfce61434660f65, type: 3}
+  - {fileID: 8300000, guid: dc44d76555ddf1d4389da12c54cbae78, type: 3}
+  syllables:
+  - identifier: 0
+    clipIndex: 0
+    startTime: 51
+    length: 0.15
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_1
+    clipIndex: 0
+    startTime: 20.88
+    length: 0.85
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_2
+    clipIndex: 0
+    startTime: 24
+    length: 1.2
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_3
+    clipIndex: 0
+    startTime: 49.17
+    length: 1.28
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_1
+    clipIndex: 0
+    startTime: 52.240005
+    length: 0.67999977
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: P_0_1
+    clipIndex: 1
+    startTime: 47.139
+    length: 0.69
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: P_1_1
+    clipIndex: 1
+    startTime: 14.249998
+    length: 3.55
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  testString: N_1_1
+  syllableGap: -0.01
+  restGap: 0.1
+  defaultFadeIn: 0.03
+  defaultFadeOut: 0.03
+  testSyllableId: b

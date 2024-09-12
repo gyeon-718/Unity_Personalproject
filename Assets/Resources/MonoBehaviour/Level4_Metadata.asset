@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede46eedd4150b4e7446289b35d88d09, type: 3}
+  m_Name: Level4_Metadata
+  m_EditorClassIdentifier:
+  levelName: Thursday
+  levelNumber: 4
+  clockIn: {fileID: 11400000, guid: f3fcb8d14e85f2e41a0d93fcf11ab413, type: 2}
+  nextCutscene: {fileID: 0}
+  lockCameraDuringClockIn: 0
+  isDarylLevel: 0
+  isDarylCleanup: 0
+  fiveTime: 160
+  fourTime: 240
+  threeTime: 270
+  twoTime: 300
+  timerLength: 360
+  description: THIS IS THE WORST-CASE SCENARIO. DARYL FOUND A TUFT OF MY FUR?! It must’ve shed when I was cleaning! Now Daryl is suspicious. He doesn’t let things go easily...
+  previewImage: {fileID: 21300000, guid: 55a01ab8d3c34ee44812a41772b0c496, type: 2}
+  sceneName: Level_4_V2
+  nextLevel: {fileID: 11400000, guid: 41e0e9c1ebd2c7a42b2237d10e0eb954, type: 2}
+  levelID: level4_sampleid
+  toolsUnlocked:
+  - Vacuum
+  tutorialInterstitial: {fileID: 21300000, guid: d8600fd881bf24342a96d03c091b6c8d, type: 2}
+  tutorialInterstitialController: {fileID: 21300000, guid: 017609a8ac1da2e40bc0e5d411d98722, type: 2}
+  tutorialInterstitialMobile: {fileID: 21300000, guid: 28c3359f2e388e344b2f82bfe6e197f6, type: 2}
+  minimap: {fileID: 21300000, guid: eb712e633348f1546b4016b7e5c1502b, type: 2}
+  isHumanLevel: 0

@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b5539b7fce94ee3b6ae8a16893ef4a, type: 3}
+  m_Name: TintFeature
+  m_EditorClassIdentifier:
+  m_Active: 1
+  sceneSettings:
+  - settingName: Night
+    sceneNames: []
+    saturation: 0.8
+    temperature: -0.2
+    lightenColor: {r: 0.03675686, g: 0.03675686, b: 0.13207549, a: 1}
+    lightenOpacity: 1
+    multiplyColor: {r: 0.080989674, g: 0.080989674, b: 0.26415092, a: 1}
+    multiplyOpacity: 0.7
+  - settingName: Test
+    sceneNames: []
+    saturation: 0
+    temperature: -0.1
+    lightenColor: {r: 1, g: 1, b: 1, a: 1}
+    lightenOpacity: 0.5
+    multiplyColor: {r: 0.9056604, g: 0.5254539, b: 0.8681592, a: 1}
+    multiplyOpacity: 1
+  - settingName: Night_MooseTest1
+    sceneNames: []
+    saturation: 0.8
+    temperature: -0.2
+    lightenColor: {r: 0.03675686, g: 0.03675686, b: 0.13207549, a: 1}
+    lightenOpacity: 1
+    multiplyColor: {r: 0.31181028, g: 0.31181028, b: 0.46226418, a: 1}
+    multiplyOpacity: 0.3
+  - settingName: Night_MooseTest2
+    sceneNames: []
+    saturation: 0.7
+    temperature: -0.1
+    lightenColor: {r: 0.03675686, g: 0.03675686, b: 0.13207549, a: 1}
+    lightenOpacity: 1
+    multiplyColor: {r: 0.08235294, g: 0.08235294, b: 0.2627451, a: 1}
+    multiplyOpacity: 0.4
+  - settingName: Night_MooseTest3
+    sceneNames: []
+    saturation: 0.75
+    temperature: -0.25
+    lightenColor: {r: 0.03675686, g: 0.03675686, b: 0.13207549, a: 1}
+    lightenOpacity: 1
+    multiplyColor: {r: 0.08235294, g: 0.08235294, b: 0.2627451, a: 1}
+    multiplyOpacity: 0.45
+  - settingName: Night_MooseTest4
+    sceneNames:
+    - Level_2_V2
+    - Level_3_V2
+    - Level_4_V2
+    - Level_5_V2
+    - Level_6_V2
+    - Level_7_V2
+    saturation: 0.9
+    temperature: -0.3
+    lightenColor: {r: 0.030660376, g: 0.030660376, b: 0.122641504, a: 1}
+    lightenOpacity: 1
+    multiplyColor: {r: 0.08235294, g: 0.08235294, b: 0.2627451, a: 1}
+    multiplyOpacity: 0.4
+  - settingName: Day_MooseTest1
+    sceneNames:
+    - Level_1_V2
+    saturation: 0.9
+    temperature: 0.1
+    lightenColor: {r: 0.038047343, g: 0.047169805, b: 0.044147372, a: 1}
+    lightenOpacity: 1
+    multiplyColor: {r: 0.83637416, g: 0.990566, b: 0.9500283, a: 1}
+    multiplyOpacity: 0.4
+  defaultSettings:
+    settingName: Default
+    sceneNames: []
+    saturation: 1
+    temperature: 0
+    lightenColor: {r: 0, g: 0, b: 0, a: 0}
+    lightenOpacity: 0
+    multiplyColor: {r: 0, g: 0, b: 0, a: 0}
+    multiplyOpacity: 0

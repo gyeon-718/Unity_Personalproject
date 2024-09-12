@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9e0d32b41b10380971ccd4675aec4e, type: 3}
+  m_Name: Shoop Collectible
+  m_EditorClassIdentifier:
+  name: Mr. Shoop's Head
+  description: 'He used to be a full body mannequin used for testing merchandise. Over the years, the wear and tear broke him down… now all that’s left of him is a head. Don’t worry Mr. Shoop, I’ll take care of you now. '
+  image: {fileID: 21300000, guid: a654ac58ecc38874782a9f2b4192c61c, type: 2}
+  collectibleID: id_shoop

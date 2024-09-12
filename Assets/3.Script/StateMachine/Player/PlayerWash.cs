@@ -29,30 +29,37 @@ public class PlayerWash : BaseState
     public override void Update()
     {
         Move();
-        // 입력이 있으면 Walk 상태로 전환
-        if (!Input.GetMouseButton(0))
-        {
-            if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
-            {
-                playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
-            }
-            else
-            {
-                playerStateMachine.ChangeState(new PlayerWalk(stateMachine, player));
-            }
 
+        if (playerStateMachine.isWarningEnd)
+        {
+            playerStateMachine.ChangeState(new PlayerAttack_Start(stateMachine, player));
         }
-
-        if (Input.GetKeyDown(KeyCode.Q))
+        else
         {
-            playerStateMachine.player_ani.SetTrigger("isSwitching");
-            playerStateMachine.playerType = PlayerType.Vacuum;
-            playerStateMachine.vacuumNozzle.SetActive(true);
-            playerStateMachine.washerNozzle.SetActive(false);
-            playerStateMachine.ChangeState(new PlayerVacuum(stateMachine, player));
+            // 입력이 있으면 Walk 상태로 전환
+            if (!Input.GetMouseButton(0))
+            {
+                if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+                {
+                    playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
+                }
+                else
+                {
+                    playerStateMachine.ChangeState(new PlayerWalk(stateMachine, player));
+                }
+
+            }
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                playerStateMachine.player_ani.SetTrigger("isSwitching");
+                playerStateMachine.playerType = PlayerType.Vacuum;
+                playerStateMachine.vacuumNozzle.SetActive(true);
+                playerStateMachine.washerNozzle.SetActive(false);
+                playerStateMachine.ChangeState(new PlayerVacuum(stateMachine, player));
+            }
         }
     }
-
     public override void Exit()
     {
         playerStateMachine.player_ani.SetBool("isWashing", false);

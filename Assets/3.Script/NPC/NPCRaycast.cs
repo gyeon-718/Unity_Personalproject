@@ -5,12 +5,14 @@ using UnityEngine;
 public class NPCRaycast : MonoBehaviour
 {
     private RaycastHit rayhit;
-    private float _maxDistance = 5f;
     private PlayerStateMachine player;
+    public LayerMask layer;   // cleanrange 인식해서 제외시키려고..
 
     private float maxDistance = 5f;
     private float coneAngle = 20f;  // 원뿔 모양 각도
     private int rayCount = 5;  // 레이캐스트 개수
+
+    private bool isPlayerDetected = false;  //  플레이어가 감지됐는가?
 
 
     private void Start()
@@ -21,36 +23,41 @@ public class NPCRaycast : MonoBehaviour
     private void Update()
     {
         //  CastConeRay();
-        Debug.DrawRay(transform.position, transform.forward * _maxDistance, Color.red);
+        Debug.DrawRay(transform.position, transform.forward * maxDistance, Color.red);
 
-        if (Physics.Raycast(transform.position, transform.forward, out rayhit, _maxDistance))
+        if (Physics.Raycast(transform.position, transform.forward, out rayhit, maxDistance,~layer))
         {
             if (rayhit.collider.gameObject.tag.Equals("Player"))
             {
-                Debug.Log("충돌");
-                ScreenManager.instance.WarningScreen_Active();
-                player.npc = gameObject.transform;
-                Debug.Log(player.npc.name);
-               
+                if (!isPlayerDetected) //  플레이어 감지 갱신이 안됐을 경우
+                {
+                    isPlayerDetected = true; //  플레이어 감지됨
+                    if (!ScreenManager.instance.iswarningscreenActive)  //  warning 스크린이 활성화되지 않았을 때
+                    {
+                        Debug.Log("충돌");
+                        ScreenManager.instance.WarningScreen_Active();  // 활성화
+                    }
+                    player.npc = gameObject.transform;
+                    Debug.Log(player.npc.name);
+                }    
             }
-            else
-            {
-                ScreenManager.instance.WarningScreen_Disactive();
-            }
+
         }
 
-        else
+        else  // 레이캐스트에 아무것도 감지되지 않았을 때
         {
-            ScreenManager.instance.WarningScreen_Disactive();
+            if(isPlayerDetected) // 플레이어 감지 갱신이 안됐을 때
+            {
+                isPlayerDetected = false; //  플레이어 감지안됨
+                if(ScreenManager.instance.iswarningscreenActive)  // warning 스크린이 활성화중일 때
+                {
+                    ScreenManager.instance.WarningScreen_Disactive(); //비활성화
+                }
+            }
         }
     }
 
 
-
-    public void Die()
-    {
-        Destroy(gameObject);
-    }
 
     private void CastConeRay()
     {
@@ -78,13 +85,13 @@ public class NPCRaycast : MonoBehaviour
                 else
                 {
                     ScreenManager.instance.WarningScreen_Disactive();
-
+               
                 }
             }
-            else
-            {
-                ScreenManager.instance.WarningScreen_Disactive();
-            }
+           // else
+           // {
+           //     ScreenManager.instance.WarningScreen_Disactive();
+           // }
         }
     }
 }

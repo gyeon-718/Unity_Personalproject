@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede46eedd4150b4e7446289b35d88d09, type: 3}
+  m_Name: Level1_Metadata
+  m_EditorClassIdentifier:
+  levelName: Monday
+  levelNumber: 1
+  clockIn: {fileID: 11400000, guid: bb844af159704b3498c2b9ddf9f527b9, type: 2}
+  nextCutscene: {fileID: 11400000, guid: 7623dfcff322ed84491b8017d821ab4a, type: 2}
+  lockCameraDuringClockIn: 1
+  isDarylLevel: 0
+  isDarylCleanup: 0
+  fiveTime: 45
+  fourTime: 90
+  threeTime: 200
+  twoTime: 300
+  timerLength: 360
+  description: 'My rent is due at the end of the week. This job gives me just barely what I need to survive. But as long as I can live quietly and unnoticed, it’s a perfect job for me. '
+  previewImage: {fileID: 21300000, guid: f83c76e622a9c3a4481409668e2e0d92, type: 2}
+  sceneName: Level_1_V2
+  nextLevel: {fileID: 11400000, guid: da754e38e021aa444a11723a43916633, type: 2}
+  levelID: level1_sample_id
+  toolsUnlocked: []
+  tutorialInterstitial: {fileID: 21300000, guid: a856c1e03e9d05d44ac32dc68dcbf0fa, type: 2}
+  tutorialInterstitialController: {fileID: 21300000, guid: a8cf2704551f0774e8319fdf741b2df8, type: 2}
+  tutorialInterstitialMobile: {fileID: 21300000, guid: 76a32ab322b4628418a5f29005f9abd7, type: 2}
+  minimap: {fileID: 21300000, guid: 9f56c9b4f5ee7a942a71ce25b7818770, type: 2}
+  isHumanLevel: 1

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9e0d32b41b10380971ccd4675aec4e, type: 3}
+  m_Name: Scrapbook Collectible
+  m_EditorClassIdentifier:
+  name: E.O.T.M Scrapbook
+  description: I never made it into this scrapbook. I’ve seen a lot of the random things employees do instead of working. I can’t say that I’m jealous that those people are in this book and I’m not. Afterall, it’s better if I remain unseen. But I always get my job done. Sometimes, I do think about what things would be like if I wasn’t what I am.
+  image: {fileID: 21300000, guid: 8f94625f2cbf9144baac716f271485e5, type: 2}
+  collectibleID: id_scrapbook

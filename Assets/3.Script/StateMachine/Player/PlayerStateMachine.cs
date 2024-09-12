@@ -14,6 +14,8 @@ public class PlayerStateMachine : StateMachine
     public Transform player;
     public Transform npc;
     public Animator player_ani;
+
+    [HideInInspector] public Animator playereye_ani;
     public PlayerType playerType;
     public ParticleSystem vacuumParticle;
     public ParticleSystem waterParticle;
@@ -24,12 +26,11 @@ public class PlayerStateMachine : StateMachine
     public GameObject vacuumNozzle;
     public GameObject washerNozzle;
 
-    public NavMeshAgent navmeshAgent;
-
     public GameObject cleanRange;
-    public bool isCleanRangeActive = false;
-    public bool ischanging = false;
-    public bool isWarningEnd = false;
+    [HideInInspector] public NavMeshAgent navmeshAgent;
+   [HideInInspector] public bool isCleanRangeActive = false;
+    //public bool ischanging = false;
+    [HideInInspector] public bool isWarningEnd = false;
     protected override BaseState GetInitialState()
     {
         return new PlayerIdle(this, player);

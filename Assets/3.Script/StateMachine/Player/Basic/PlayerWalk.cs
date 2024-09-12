@@ -24,45 +24,51 @@ public class PlayerWalk : BaseState
     public override void Update()
     {
         Walk();
-        
-         if (Input.GetMouseButton(0))
+        if (playerStateMachine.isWarningEnd)
         {
-            switch (playerStateMachine.playerType)
+            playerStateMachine.ChangeState(new PlayerAttack_Start(stateMachine, player));
+        }
+        else
+        {
+
+            if (Input.GetMouseButton(0))
             {
-                case PlayerType.Vacuum:
-                    playerStateMachine.ChangeState(new PlayerVacuum(stateMachine, player));
-                    break;
-                case PlayerType.Wash:
-                    playerStateMachine.ChangeState(new PlayerWash(stateMachine, player));
-                    break;
+                switch (playerStateMachine.playerType)
+                {
+                    case PlayerType.Vacuum:
+                        playerStateMachine.ChangeState(new PlayerVacuum(stateMachine, player));
+                        break;
+                    case PlayerType.Wash:
+                        playerStateMachine.ChangeState(new PlayerWash(stateMachine, player));
+                        break;
 
+                }
             }
-        }
 
-        else if (Input.GetKeyDown(KeyCode.Q))
-        {
-            playerStateMachine.player_ani.SetTrigger("isSwitching");
-            switch (playerStateMachine.playerType)
+            else if (Input.GetKeyDown(KeyCode.Q))
             {
-                case PlayerType.Wash:
-                    playerStateMachine.playerType = PlayerType.Vacuum;
-                    playerStateMachine.vacuumNozzle.SetActive(true);
-                    playerStateMachine.washerNozzle.SetActive(false);
-                    break;
-                case PlayerType.Vacuum:
-                    playerStateMachine.playerType = PlayerType.Wash;
-                    playerStateMachine.vacuumNozzle.SetActive(false);
-                    playerStateMachine.washerNozzle.SetActive(true);
-                    break;
+                playerStateMachine.player_ani.SetTrigger("isSwitching");
+                switch (playerStateMachine.playerType)
+                {
+                    case PlayerType.Wash:
+                        playerStateMachine.playerType = PlayerType.Vacuum;
+                        playerStateMachine.vacuumNozzle.SetActive(true);
+                        playerStateMachine.washerNozzle.SetActive(false);
+                        break;
+                    case PlayerType.Vacuum:
+                        playerStateMachine.playerType = PlayerType.Wash;
+                        playerStateMachine.vacuumNozzle.SetActive(false);
+                        playerStateMachine.washerNozzle.SetActive(true);
+                        break;
+                }
             }
-        }
 
-        else if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
-        {
-            playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
-        }
+            else if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+            {
+                playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
+            }
 
-         
+        }
 
 
 

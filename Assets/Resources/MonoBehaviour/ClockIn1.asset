@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c9355e61c4097a8c2712eb69f262fe, type: 3}
+  m_Name: ClockIn1
+  m_EditorClassIdentifier:
+  name: Monday Clock-In
+  sceneName: ClockIn1
+  kyleMumbles: {fileID: 11400000, guid: a183cdcc5c8494744a81c4cf7a9bd6df, type: 2}
+  darylMumbles: {fileID: 11400000, guid: 30d6da500350b324e9adfe3a46d89e48, type: 2}
+  kyleSimlishProfile: {fileID: 11400000, guid: 0ff6112bba155bc46a553a313bd8cd50, type: 2}
+  darylSimlishProfile: {fileID: 11400000, guid: 540c5a016285b8940a586451cd89df1a, type: 2}
+  unnoticed:
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 12
+    text: WHO GOES THERE?! I heard the elevator! Don’t think you can sneak one past ol’ Daryl!
+    soundType: 1
+    simlishString: E_1_5
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 8
+    darylExpression: 0
+    text: OH! H-Hey Daryl, it’s just me...
+    soundType: 1
+    simlishString: N_0_2 0 0 N_0_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 7
+    text: Kyle! Good to hear from you, bud! Ready for another week?
+    soundType: 1
+    simlishString: N_1_2 0
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 6
+    darylExpression: 1
+    text: Yeah... My rent's due at the end of this week. I really hope I can pay it off.
+    soundType: 1
+    simlishString: P_0_1 0 P_1_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 2
+    darylExpression: 7
+    text: Aw, no need to worry Kyle! I’m sure it’ll be a smooth and easy week.
+    soundType: 1
+    simlishString: F_1_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 10
+    text: Maybe if I’m lucky, something exciting will happen too.
+    soundType: 1
+    simlishString: E_1_4
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 7
+    text: And hey, if you need anything, you make sure to let your ol’ head of security pal Daryl know, alright?
+    soundType: 1
+    simlishString: F_0_2 0 F_2_4
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 7
+    darylExpression: 0
+    text: Thanks, Daryl.
+    soundType: 1
+    simlishString: N_1_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 7
+    text: ... Anyways! I’ve taken enough of your time. I’ll let you get to your janitorial duties. See ya tomorrow, bud!
+    soundType: 1
+    simlishString: F_1_5 0 0 S_1
+    voiceLine: {fileID: 0}
+  levelID: clockIn1
+  prevClockIn: {fileID: 0}
+  prevLevel: {fileID: 0}
+  type: 0
+  CollectibleDescription:
+  CollectibleImage: {fileID: 0}

@@ -18,6 +18,7 @@ public class PlayerAttack_Start : BaseState
 
     public override void Enter()
     {
+        playerStateMachine.playereye_ani.SetBool("isCrazy", true);
         playerStateMachine.PlayAnimation("Attack_Start");
         Debug.Log("어택스타트");
         // 애니메이션

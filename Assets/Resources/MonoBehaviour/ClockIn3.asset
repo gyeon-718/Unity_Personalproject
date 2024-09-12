@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c9355e61c4097a8c2712eb69f262fe, type: 3}
+  m_Name: ClockIn3
+  m_EditorClassIdentifier:
+  name: Wednesday Clock-In
+  sceneName: ClockIn3
+  kyleMumbles: {fileID: 11400000, guid: a183cdcc5c8494744a81c4cf7a9bd6df, type: 2}
+  darylMumbles: {fileID: 11400000, guid: 30d6da500350b324e9adfe3a46d89e48, type: 2}
+  kyleSimlishProfile: {fileID: 11400000, guid: e502ec0e46e87624ba356fea97c87cd7, type: 2}
+  darylSimlishProfile: {fileID: 11400000, guid: 540c5a016285b8940a586451cd89df1a, type: 2}
+  unnoticed:
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 10
+    text: KYLE! KYLE I’VE BEEN WAITING FOR YOU! I WANNA TELL YOU ABOUT SOMETHING I FOUND!
+    soundType: 1
+    simlishString: E_0_2 0 E_2_3
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 4
+    darylExpression: 2
+    text: D-DARYL! Don’t shout like that, you scared me.
+    soundType: 1
+    simlishString: PN_1_1
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 1
+    darylExpression: 2
+    text: ... Wait. Y-You found something..?
+    soundType: 1
+    simlishString: N_0_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 9
+    text: When I was doing my safety checks around the office, I found a tuft of fur… with blood on it… or maybe it was jam. Uncertain. But either way… it’s suspicious.
+    soundType: 1
+    simlishString: N_2_1 0 0 N_1_4
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 4
+    darylExpression: 0
+    text: WH-WHAT?! YOU- YOU DID?! W-Why would something like that EVER be in the office?!
+    soundType: 1
+    simlishString: PN_0_2 0 0 PN_1_2
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 4
+    darylExpression: 11
+    text: Beats me. Something’s afoot though. I suspect a dangerous animal got into the office.
+    soundType: 1
+    simlishString: N_1_6
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 4
+    darylExpression: 9
+    text: I run a tight and safe ship. I can’t let some animal run around freely. I gotta protect everyone.
+    soundType: 1
+    simlishString: P_2_2
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 4
+    darylExpression: 1
+    text: W-Well… good luck finding hi- I MEAN ‘IT’!
+    soundType: 1
+    simlishString: PN_2_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 9
+    text: I bet it’ll already be caught by tomorrow. Let me know if you see anything. See ya tomorrow, bud!
+    soundType: 1
+    simlishString: E_2_2 0 S_1
+    voiceLine: {fileID: 0}
+  levelID: clockIn3
+  prevClockIn: {fileID: 11400000, guid: 2e213fbe94bc7bc438025586b55193fd, type: 2}
+  prevLevel: {fileID: 11400000, guid: da754e38e021aa444a11723a43916633, type: 2}
+  type: 0
+  CollectibleDescription:
+  CollectibleImage: {fileID: 0}

@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c9355e61c4097a8c2712eb69f262fe, type: 3}
+  m_Name: ClockIn4
+  m_EditorClassIdentifier:
+  name: Thursday Clock-In
+  sceneName: ClockIn4
+  kyleMumbles: {fileID: 11400000, guid: a183cdcc5c8494744a81c4cf7a9bd6df, type: 2}
+  darylMumbles: {fileID: 11400000, guid: 30d6da500350b324e9adfe3a46d89e48, type: 2}
+  kyleSimlishProfile: {fileID: 11400000, guid: e502ec0e46e87624ba356fea97c87cd7, type: 2}
+  darylSimlishProfile: {fileID: 11400000, guid: 540c5a016285b8940a586451cd89df1a, type: 2}
+  unnoticed:
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 1
+    text: Kyle! I have something VERY important to tell you about.
+    soundType: 1
+    simlishString: E_2_3
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 1
+    darylExpression: 0
+    text: HUH? You do?! D-Did you find anything, Daryl?
+    soundType: 1
+    simlishString: PN_0_3 0 0 PN_1_3
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 12
+    text: Hm… not necessarily. I wasn’t able to find a single trace of it last night. But I know that RASCAL is hiding in the office somewhere.
+    soundType: 1
+    simlishString: N_1_3 0 N_0_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 0
+    darylExpression: 9
+    text: 'I wanted to update you on this: I’ve started working on something special that’ll help me catch it. But it’ll take a while for me to make it.'
+    soundType: 1
+    simlishString: P_2_1 0 P_1_2
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 7
+    text: Don’t you worry though! I’ll keep this office safe for the both of us.
+    soundType: 1
+    simlishString: F_1_4
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 4
+    darylExpression: 1
+    text: Y-Yep! I’m sure you’ll catch that R-RASCAL soon, haha... um...
+    soundType: 1
+    simlishString: N_1_2
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 1
+    darylExpression: 1
+    text: I better get to work. I’ll let you know if I c-catch a glimpse of it.
+    soundType: 1
+    simlishString: N_1_3
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 10
+    text: Sounds like a plan. I’ll see ya tomorrow, bud!
+    soundType: 1
+    simlishString: F_1_3 0 0 S_1
+    voiceLine: {fileID: 0}
+  levelID: clockIn4
+  prevClockIn: {fileID: 11400000, guid: 71aa11608d66504459939d89fb7e7b42, type: 2}
+  prevLevel: {fileID: 11400000, guid: e52b454e5794b114785faf7bfdd2d2ee, type: 2}
+  type: 0
+  CollectibleDescription:
+  CollectibleImage: {fileID: 0}

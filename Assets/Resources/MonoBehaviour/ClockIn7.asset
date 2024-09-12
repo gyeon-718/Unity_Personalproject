@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c9355e61c4097a8c2712eb69f262fe, type: 3}
+  m_Name: ClockIn7
+  m_EditorClassIdentifier:
+  name: Sunday Clock-In
+  sceneName: ClockIn7
+  kyleMumbles: {fileID: 11400000, guid: a183cdcc5c8494744a81c4cf7a9bd6df, type: 2}
+  darylMumbles: {fileID: 11400000, guid: 30d6da500350b324e9adfe3a46d89e48, type: 2}
+  kyleSimlishProfile: {fileID: 11400000, guid: e502ec0e46e87624ba356fea97c87cd7, type: 2}
+  darylSimlishProfile: {fileID: 11400000, guid: 785b8c77caf6d75428700565c1f32392, type: 2}
+  unnoticed:
+  - speaker: 1
+    kyleExpression: 2
+    darylExpression: 2
+    text: Would ya look at that. My newly made Were-Tracker T-200 is telling me a werewolf is nearby.
+    soundType: 1
+    simlishString: N_3_1 N_1_4
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 2
+    text: This tracker contains that tuft of fur I found a few nights ago. It’ll lead me to whoever this tuft of fur came from.
+    soundType: 1
+    simlishString: N_3_2
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 2
+    darylExpression: 4
+    text: You wouldn’t happen to know anything about that, would you Kyle?
+    soundType: 1
+    simlishString: N_1_3
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 5
+    darylExpression: 0
+    text: ...
+    soundType: 1
+    simlishString: 0
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 2
+    text: I trusted you Kyle. How many coworkers have you murdered? How many? No... the number doesn’t matter anymore. It could be zero and I still wouldn’t forgive you.
+    soundType: 1
+    simlishString: N_1_1 0 N_2_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 2
+    darylExpression: 4
+    text: You were a danger to everyone regardless.
+    soundType: 1
+    simlishString: N_1_2
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 2
+    text: You lied...
+    soundType: 1
+    simlishString: L_3
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 1
+    darylExpression: 4
+    text: You lied to me.
+    soundType: 1
+    simlishString: L_2
+    voiceLine: {fileID: 0}
+  - speaker: 0
+    kyleExpression: 2
+    darylExpression: 0
+    text: Daryl... I... need to pay my rent.
+    soundType: 1
+    simlishString: N_1_2
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 2
+    darylExpression: 6
+    text: Oh, you won’t have to worry about paying rent anymore. I’m gonna kill you, Kyle.
+    soundType: 1
+    simlishString: C_1_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 2
+    darylExpression: 6
+    text: I’m gonna make sure your organs splatter across the floor. I’m gonna turn your tail into a keychain. I’m gonna wear your skin like a fur coat.
+    soundType: 1
+    simlishString: D_1_1
+    voiceLine: {fileID: 0}
+  - speaker: 1
+    kyleExpression: 2
+    darylExpression: 13
+    text: See you soon, bud.
+    soundType: 1
+    simlishString: S_1
+    voiceLine: {fileID: 0}
+  levelID: clockIn7
+  prevClockIn: {fileID: 11400000, guid: 932c842e0d38a2b42ae74bf843643f53, type: 2}
+  prevLevel: {fileID: 11400000, guid: 0476b592d4f27d146b6431eef200a831, type: 2}
+  type: 0
+  CollectibleDescription:
+  CollectibleImage: {fileID: 0}

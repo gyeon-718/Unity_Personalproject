@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c9355e61c4097a8c2712eb69f262fe, type: 3}
+  m_Name: Cutscene_Penultimate
+  m_EditorClassIdentifier:
+  name: Epiphany
+  sceneName: Penultimate Cutscene
+  kyleMumbles: {fileID: 0}
+  darylMumbles: {fileID: 0}
+  kyleSimlishProfile: {fileID: 0}
+  darylSimlishProfile: {fileID: 0}
+  unnoticed: []
+  levelID: penultimate_cutscene
+  prevClockIn: {fileID: 0}
+  prevLevel: {fileID: 0}
+  type: 1
+  CollectibleDescription: 'I didn''t know it at the time, but Daryl had planted a security camera inside one of the CEO''s potted plants. '
+  CollectibleImage: {fileID: 21300000, guid: fed6c5e3262e9964f83910c68185336a, type: 2}

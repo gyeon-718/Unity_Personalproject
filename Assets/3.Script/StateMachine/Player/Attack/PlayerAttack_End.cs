@@ -25,19 +25,23 @@ public class PlayerAttack_End : BaseState
 
     public override void Update()
     {
-
-        if (playerStateMachine.isAnimationEnd("Attack_End"))
-        {
-            playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
-        }
+        AnimatorStateInfo state = ScreenManager.instance.killingAni.GetCurrentAnimatorStateInfo(0);
+            if (state.normalizedTime >= 1.0f)
+            { 
+                Debug.Log("넘어간다");
+                playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
+            }    
     }
 
     public override void Exit()
     {
         ScreenManager.instance.WarningScreen_Disactive();
+        ScreenManager.instance.KillingScreen_Disactive(); ;
         playerStateMachine.isWarningEnd = false;
-
         playerStateMachine.npc.gameObject.SetActive(false);  // 임시
+        playerStateMachine.playereye_ani.SetBool("isCrazy", false);
+
+
 
     }
 

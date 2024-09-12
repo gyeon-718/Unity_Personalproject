@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2f113ccc827952e7105be3dcadba91, type: 3}
+  m_Name: DarylS3_BP
+  m_EditorClassIdentifier:
+  clips:
+  - {fileID: 8300000, guid: 705b32f7abe0bf84fa14d94c434e26b4, type: 3}
+  - {fileID: 8300000, guid: 8464f1469efab4445b605dc7fb804035, type: 3}
+  - {fileID: 8300000, guid: 20fe52442d6bc7c4b961d0dd0c1e0e62, type: 3}
+  - {fileID: 8300000, guid: fe3558b3cd0c1cc4384c1f6cfb500fc4, type: 3}
+  - {fileID: 8300000, guid: a229dae997d4eaa44a4d0377a3c33979, type: 3}
+  - {fileID: 8300000, guid: 2877a93ecbdd98540ac1d308e22dc265, type: 3}
+  - {fileID: 8300000, guid: 176f1079e044bdf43bdb11469780dff4, type: 3}
+  syllables:
+  - identifier: 0
+    clipIndex: 0
+    startTime: 1
+    length: 0.15
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: C_1_1
+    clipIndex: 0
+    startTime: 12.31
+    length: 3.3600001
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: C_1_2
+    clipIndex: 0
+    startTime: 19.049997
+    length: 3.0200002
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: C_1_3
+    clipIndex: 0
+    startTime: 22.25
+    length: 2.2
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: C_1_4
+    clipIndex: 0
+    startTime: 27.55
+    length: 3.76
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: L_1
+    clipIndex: 1
+    startTime: 1.7799999
+    length: 0.84999996
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: L_2
+    clipIndex: 1
+    startTime: 3.69
+    length: 1.4
+    volumeAdjustment: -0.6500001
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: L_3
+    clipIndex: 1
+    startTime: 8.95
+    length: 0.85
+    volumeAdjustment: -0.3
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_1
+    clipIndex: 2
+    startTime: 31.08
+    length: 1.6800002
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_2_1
+    clipIndex: 2
+    startTime: 42.14
+    length: 4.1
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_2
+    clipIndex: 2
+    startTime: 23.34
+    length: 2.1
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_3_1
+    clipIndex: 2
+    startTime: 2.45
+    length: 1.75
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_3_2
+    clipIndex: 2
+    startTime: 8.3
+    length: 2.71
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_3
+    clipIndex: 2
+    startTime: 15.7
+    length: 3.4499998
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: S_1
+    clipIndex: 3
+    startTime: 23.4
+    length: 2.14
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: D_1_1
+    clipIndex: 5
+    startTime: 34.22
+    length: 5.3000007
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: '?'
+    clipIndex: 5
+    startTime: 21.15
+    length: 1
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0
+    fadeOutTime: 0
+  - identifier: N_1_4
+    clipIndex: 2
+    startTime: 33.540005
+    length: 1.31
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  testString: N_3_1 N_1_4
+  syllableGap: -0.01
+  restGap: 0.1
+  defaultFadeIn: 0.03
+  defaultFadeOut: 0.03
+  testSyllableId: b

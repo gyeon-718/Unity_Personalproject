@@ -1,0 +1,278 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2f113ccc827952e7105be3dcadba91, type: 3}
+  m_Name: KyleWolf_BP
+  m_EditorClassIdentifier:
+  clips:
+  - {fileID: 8300000, guid: 55a6001d00dc3b74095b396edba40b4f, type: 3}
+  - {fileID: 8300000, guid: 172731d91201b6d418985df71c7d7d0d, type: 3}
+  - {fileID: 8300000, guid: dd14c4de643762649a4dbf3466df3cff, type: 3}
+  - {fileID: 8300000, guid: 057db9f3a40221142b844bbffa68e361, type: 3}
+  - {fileID: 8300000, guid: 1c27deda144f284449b7f571e04f6952, type: 3}
+  - {fileID: 8300000, guid: 1e811b289f0784045a5a41d9f6777769, type: 3}
+  - {fileID: 8300000, guid: 2c2cee62dce5da24591a304fe931f659, type: 3}
+  - {fileID: 8300000, guid: db7a7cc5f4153c14fbbfd49b8b165a34, type: 3}
+  syllables:
+  - identifier: 0
+    clipIndex: 3
+    startTime: 83.99
+    length: 0.15
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_1
+    clipIndex: 0
+    startTime: 20.92
+    length: 1.27
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_2
+    clipIndex: 0
+    startTime: 25.15
+    length: 1.72
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_3
+    clipIndex: 0
+    startTime: 26.96
+    length: 0.97
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_4
+    clipIndex: 0
+    startTime: 42.438
+    length: 1.66
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_5
+    clipIndex: 0
+    startTime: 46.97
+    length: 0.83
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_6
+    clipIndex: 0
+    startTime: 58.85
+    length: 0.5200001
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_0_7
+    clipIndex: 1
+    startTime: 1.58
+    length: 0.78
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_1
+    clipIndex: 0
+    startTime: 3.6100001
+    length: 2.3
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_2
+    clipIndex: 0
+    startTime: 8.53
+    length: 2.74
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_3
+    clipIndex: 0
+    startTime: 14.83
+    length: 3.4
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_4
+    clipIndex: 0
+    startTime: 30.85
+    length: 2.54
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_5
+    clipIndex: 0
+    startTime: 36.16
+    length: 2.16
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_6
+    clipIndex: 0
+    startTime: 48.38
+    length: 1.82
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_7
+    clipIndex: 0
+    startTime: 53.66
+    length: 2.15
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0
+    fadeOutTime: 0
+  - identifier: N_1_8
+    clipIndex: 0
+    startTime: 60.010002
+    length: 1.62
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: N_1_9
+    clipIndex: 1
+    startTime: 2.52
+    length: 2.33
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: O_1
+    clipIndex: 2
+    startTime: 43.69
+    length: 0.97
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: P_1_1
+    clipIndex: 5
+    startTime: 16.140001
+    length: 1.5799999
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: P_1_2
+    clipIndex: 6
+    startTime: 12.73
+    length: 2.44
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: P_1_3
+    clipIndex: 6
+    startTime: 30.8
+    length: 3.1299999
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_0_1
+    clipIndex: 3
+    startTime: 1.73
+    length: 0.57
+    volumeAdjustment: -0.72
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_0_2
+    clipIndex: 3
+    startTime: 82.89
+    length: 0.70000005
+    volumeAdjustment: -0.4
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_0_3
+    clipIndex: 4
+    startTime: 33.23
+    length: 0.54
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_1_1
+    clipIndex: 3
+    startTime: 2.57
+    length: 1.47
+    volumeAdjustment: -0.4
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_1_2
+    clipIndex: 4
+    startTime: 5.71
+    length: 2.17
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_1_3
+    clipIndex: 4
+    startTime: 35.47
+    length: 2.7299998
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_1_4
+    clipIndex: 4
+    startTime: 42.7
+    length: 3.36
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_1_5
+    clipIndex: 4
+    startTime: 50.46
+    length: 1.6899999
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_1_6
+    clipIndex: 4
+    startTime: 53.56
+    length: 1.52
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  - identifier: PN_2_1
+    clipIndex: 4
+    startTime: 8.7
+    length: 3.93
+    volumeAdjustment: 0
+    useDefaultFade: 1
+    fadeInTime: 0.03
+    fadeOutTime: 0.03
+  testString: N_1_2
+  syllableGap: -0.01
+  restGap: 0.1
+  defaultFadeIn: 0.03
+  defaultFadeOut: 0.03
+  testSyllableId: b
