@@ -22,8 +22,9 @@ public class NPCRaycast : MonoBehaviour
 
     private void Update()
     {
+        Vector3 position = new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z);
         //  CastConeRay();
-        Debug.DrawRay(transform.position, transform.forward * maxDistance, Color.red);
+        Debug.DrawRay(position,transform.forward * maxDistance, Color.red);
 
         if (Physics.Raycast(transform.position, transform.forward, out rayhit, maxDistance,~layer))
         {

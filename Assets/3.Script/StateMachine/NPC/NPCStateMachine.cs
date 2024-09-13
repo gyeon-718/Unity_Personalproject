@@ -12,10 +12,10 @@ public class NPCStateMachine : StateMachine
     public Transform npc;
     public Animator npc_ani;
 
- //   protected override BaseState GetInitialState()
- //   {
- //       return new PlayerIdle(this, npc);
- //   }
+    protected override BaseState GetInitialState()
+    {
+        return new NPCIdle(this, npc);
+    }
     private void Start()
     {
         base.Start();

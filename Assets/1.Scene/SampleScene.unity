@@ -4312,6 +4312,8 @@ GameObject:
   - component: {fileID: 395630810}
   - component: {fileID: 395630807}
   - component: {fileID: 395630806}
+  - component: {fileID: 395630812}
+  - component: {fileID: 395630811}
   m_Layer: 9
   m_Name: NPC
   m_TagString: Untagged
@@ -4379,6 +4381,35 @@ Transform:
   - {fileID: 1951184877}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -181.132, z: 0}
+--- !u!114 &395630811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395630805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ff6afea12661e4ba03048c5c2d6863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc: {fileID: 395630810}
+  npc_ani: {fileID: 395630806}
+--- !u!114 &395630812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395630805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc72e834cc1a18c40a97ec79eebad744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &400358156
 GameObject:
   m_ObjectHideFlags: 0
@@ -10682,7 +10713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1169697916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12976,7 +13007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1621214147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14848,7 +14879,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1815579832}
