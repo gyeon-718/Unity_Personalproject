@@ -82,10 +82,10 @@ public class PlayerWalk : BaseState
 
     private void Walk()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical"); 
+        float horizontal = Input.GetAxis("Vertical"); 
+        float vertical = Input.GetAxis("Horizontal"); 
 
-        Vector3 moveDir = new Vector3(horizontal, 0, vertical);
+        Vector3 moveDir = new Vector3(horizontal, 0, -vertical);
         if (moveDir != Vector3.zero)
         {
             player.forward = Vector3.Slerp(player.forward, moveDir, Time.deltaTime * rotateSpeed);

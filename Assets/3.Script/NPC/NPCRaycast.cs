@@ -77,7 +77,6 @@ public class NPCRaycast : MonoBehaviour
             {
                 if (rayHit.collider.gameObject.tag.Equals("Player"))
                 {
-
                     Debug.Log("Ãæµ¹");
                     ScreenManager.instance.WarningScreen_Active();
                    
