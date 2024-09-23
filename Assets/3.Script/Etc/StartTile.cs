@@ -16,7 +16,7 @@ public class StartTile : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isStart = true;
-            Debug.Log(isStart);
+          //  Debug.Log(isStart);
         }
     }
 }

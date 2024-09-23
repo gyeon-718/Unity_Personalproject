@@ -12,6 +12,7 @@ public class CineMachine : MonoBehaviour
     private CinemachineVirtualCameraBase playerFollowing;
     private CinemachineVirtualCameraBase enterStage;
     private StartTile startTile;
+    private StarReturnPlayerFollowingtTile followingTile;
 
     private bool hasEnteredStage = false;
     public bool isEndTalk = false;
@@ -31,6 +32,7 @@ public class CineMachine : MonoBehaviour
         enterStage = enterStage_obj.GetComponent<CinemachineVirtualCameraBase>();
 
         startTile = FindObjectOfType<StartTile>();
+        followingTile = FindObjectOfType<StarReturnPlayerFollowingtTile>();
 
         SetFollowingCam();
     }
@@ -41,7 +43,7 @@ public class CineMachine : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            isEndTalk = true;
+            followingTile.isEndTalk = true;
             Debug.Log(isEndTalk);
         }
 
@@ -51,12 +53,18 @@ public class CineMachine : MonoBehaviour
             // 카메라 전환 수행 및 플래그 설정
             SetEnterCam();
             hasEnteredStage = true;
+
+
+            if (followingTile.isEndTalk)
+            {
+                SetFollowingCam();
+            }
         }
 
-        else if (isEndTalk)
-        {
-            SetFollowingCam();
-        }
+      //  if (followingTile.isEndTalk)
+      //  {
+      //      SetFollowingCam();
+      //  }
 
     }
 
