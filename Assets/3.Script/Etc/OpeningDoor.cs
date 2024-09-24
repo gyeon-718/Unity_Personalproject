@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class OpeningDoor : MonoBehaviour
 {
+    //엘레베이터 열고 닫기 위한 스크립트
     private Animator doorAni;
-    private StartTile startTile;
-
     private void Start()
     {
         doorAni = GetComponent<Animator>();
-        startTile = FindObjectOfType<StartTile>();
     }
 
 

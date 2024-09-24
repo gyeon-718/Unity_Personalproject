@@ -6,11 +6,6 @@ public class StarReturnPlayerFollowingtTile : MonoBehaviour
 {
     public bool isEndTalk = false;
 
-
-    //private void Start()
-    //{
-    //    col = GetComponent<Collider>();
-    //}
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))

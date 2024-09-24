@@ -55,16 +55,16 @@ public class CineMachine : MonoBehaviour
             hasEnteredStage = true;
 
 
-            if (followingTile.isEndTalk)
-            {
-                SetFollowingCam();
-            }
+          //  if (followingTile.isEndTalk)
+          //  {
+          //      SetFollowingCam();
+          //  }
         }
 
-      //  if (followingTile.isEndTalk)
-      //  {
-      //      SetFollowingCam();
-      //  }
+       if (followingTile.isEndTalk)
+       {
+           SetFollowingCam();
+       }
 
     }
 

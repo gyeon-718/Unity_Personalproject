@@ -8,7 +8,7 @@ public class PlayerWash : BaseState
     private PlayerStateMachine playerStateMachine;
 
     private float rotateSpeed = 5f;
-    private float moveSpeed = 3f;
+    private float moveSpeed = 2.5f;
     private string currentAnimation;
 
     public PlayerWash(StateMachine stateMachine, Transform _player) : base("PlayerWash", stateMachine)
@@ -75,7 +75,8 @@ public class PlayerWash : BaseState
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 moveDir = new Vector3(horizontal, 0, vertical);
+        Vector3 moveDir = new Vector3(horizontal, 0, -vertical);
+        moveDir = moveDir.normalized;
         if (moveDir != Vector3.zero)
         {
             if (currentAnimation != "Walk")

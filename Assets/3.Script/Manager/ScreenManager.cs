@@ -9,6 +9,7 @@ public class ScreenManager : MonoBehaviour
 
     [SerializeField] private GameObject warningScreen;
     [SerializeField] private GameObject killingScreen;
+    [SerializeField] private GameObject startingScreen;
     private PlayerStateMachine player;
     public bool iswarningscreenActive = false;
 
@@ -43,7 +44,7 @@ public class ScreenManager : MonoBehaviour
 
     public void WarningScreen_Active()
     {
-       
+
         if (!iswarningscreenActive)
         {
             iswarningscreenActive = true;
@@ -55,7 +56,7 @@ public class ScreenManager : MonoBehaviour
 
     private IEnumerator WarningScreen_co()
     {
-         color.a = 0;
+        color.a = 0;
         // 경고 화면의 알파값을 0에서 1로 서서히 증가
         while (color.a < 0.7f)
         {
@@ -73,7 +74,8 @@ public class ScreenManager : MonoBehaviour
 
 
     public void WarningScreen_Disactive()
-    {if (iswarningscreenActive)
+    {
+        if (iswarningscreenActive)
         {
             iswarningscreenActive = false;
             warningScreen.SetActive(false);
@@ -90,6 +92,21 @@ public class ScreenManager : MonoBehaviour
         killingScreen.SetActive(false);
     }
 
+    public void PlayStartingAnimation()
+    {
+        startingScreen.SetActive(true);
+
+        var start_Ani = startingScreen.GetComponent<Animator>();
+
+        AnimatorStateInfo stateInfo = start_Ani.GetCurrentAnimatorStateInfo(0);
+       // Debug.Log(stateInfo.IsName("Start"));
+        if (stateInfo.normalizedTime >= 0.6f)
+        {
+            Debug.Log("애니메이션 끝남");
+            startingScreen.SetActive(false);
+        }
+
+    }
 
 
 

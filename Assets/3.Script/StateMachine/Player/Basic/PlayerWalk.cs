@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerWalk : BaseState
 {
-    private float moveSpeed = 3f;
+    private float moveSpeed = 2.5f;
     private float rotateSpeed = 5f;
 
     private PlayerStateMachine playerStateMachine;
@@ -82,10 +82,11 @@ public class PlayerWalk : BaseState
 
     private void Walk()
     {
-        float horizontal = Input.GetAxis("Vertical"); 
-        float vertical = Input.GetAxis("Horizontal"); 
+        float horizontal = Input.GetAxis("Horizontal"); 
+        float vertical = Input.GetAxis("Vertical");
 
-        Vector3 moveDir = new Vector3(horizontal, 0, -vertical);
+        Vector3 moveDir = new Vector3(horizontal, 0, vertical);
+        moveDir = moveDir.normalized;
         if (moveDir != Vector3.zero)
         {
             player.forward = Vector3.Slerp(player.forward, moveDir, Time.deltaTime * rotateSpeed);
