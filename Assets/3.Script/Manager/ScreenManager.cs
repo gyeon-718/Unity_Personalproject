@@ -10,10 +10,13 @@ public class ScreenManager : MonoBehaviour
     [SerializeField] private GameObject warningScreen;
     [SerializeField] private GameObject killingScreen;
     [SerializeField] private GameObject startingScreen;
+    [SerializeField] private GameObject timer;
     private PlayerStateMachine player;
+    private LastTile lastTile;
     public bool iswarningscreenActive = false;
 
     public Animator killingAni;
+    [SerializeField]private Animator startAni;
     private Image warningImage;
     private Color color;
 
@@ -22,10 +25,15 @@ public class ScreenManager : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<PlayerStateMachine>();
+        lastTile = FindObjectOfType<LastTile>();
+       
         killingAni = killingScreen.GetComponent<Animator>();
+        startAni = startingScreen.GetComponent<Animator>();
         warningImage = warningScreen.GetComponent<Image>();
+
         //  npcRaycasts = FindObjectsOfType<NPCRaycast>();
         color = warningImage.color;
+        timer.SetActive(false);
     }
 
     private void Awake()
@@ -95,17 +103,19 @@ public class ScreenManager : MonoBehaviour
     public void PlayStartingAnimation()
     {
         startingScreen.SetActive(true);
+        Debug.Log("PlayStarting 시작");
 
-        var start_Ani = startingScreen.GetComponent<Animator>();
-
-        AnimatorStateInfo stateInfo = start_Ani.GetCurrentAnimatorStateInfo(0);
-       // Debug.Log(stateInfo.IsName("Start"));
-        if (stateInfo.normalizedTime >= 0.6f)
-        {
-            Debug.Log("애니메이션 끝남");
-            startingScreen.SetActive(false);
+        AnimatorStateInfo stateInfo = startAni.GetCurrentAnimatorStateInfo(0);
+        // 애니메이션이 재생 중인지 확인
+        if (stateInfo.IsName("Start"))
+        {   
+            if (stateInfo.normalizedTime >= 1.0f)  // 업데이트에 안넣으면 normalizedTime 갱신 안됨...
+            {
+                startingScreen.SetActive(false);
+                lastTile.haveActivedStart_ani = true;  // 스테이지 시작 애니메이션 다시재생 방지
+                timer.SetActive(true);
+            }
         }
-
     }
 
 

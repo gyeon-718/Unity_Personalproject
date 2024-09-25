@@ -26,7 +26,8 @@ public class PlayerAttack_Running : BaseState
     public override void Update()
     {
         // float newDistanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        if (Vector3.Distance(playerStateMachine.player.transform.position, playerStateMachine.npc.position) < 1f)
+        // 플레이어가 npc랑 가까워지면
+        if (Vector3.Distance(playerStateMachine.player.transform.position, playerStateMachine.npc.position) < 1f) 
         {
             playerStateMachine.ChangeState(new PlayerAttack_End(stateMachine, player));
         }

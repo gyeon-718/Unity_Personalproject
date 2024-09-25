@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LastTile : MonoBehaviour
@@ -10,6 +8,8 @@ public class LastTile : MonoBehaviour
     [SerializeField] private GameObject helperUI;
     private bool isOpenedDoor = false;    // UI 促矫 难咙 规瘤
 
+    public bool haveActivedStart_ani = false;
+
 
     private void Start()
     {
@@ -17,12 +17,16 @@ public class LastTile : MonoBehaviour
         helperUI.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (isOpenedDoor&& !haveActivedStart_ani) ScreenManager.instance.PlayStartingAnimation();  // 没家备开 局聪皋捞记
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")&& !isOpenedDoor)
         {
-            helperUI.SetActive(true);
-          
+            helperUI.SetActive(true);      
         }
     }
 
@@ -33,7 +37,6 @@ public class LastTile : MonoBehaviour
             helperUI.SetActive(false);
             door_Ani.SetBool("havetoOpen", true);
             isOpenedDoor = true;
-            ScreenManager.instance.PlayStartingAnimation();
         }
     }
 

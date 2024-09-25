@@ -87,6 +87,9 @@ public class PlayerWalk : BaseState
 
         Vector3 moveDir = new Vector3(horizontal, 0, vertical);
         moveDir = moveDir.normalized;
+
+        moveDir = Quaternion.Euler(0, 45, 0) * moveDir;
+
         if (moveDir != Vector3.zero)
         {
             player.forward = Vector3.Slerp(player.forward, moveDir, Time.deltaTime * rotateSpeed);
