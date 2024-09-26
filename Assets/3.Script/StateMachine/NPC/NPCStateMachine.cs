@@ -11,6 +11,7 @@ public class NPCStateMachine : StateMachine
 {
     public Transform npc;
     public Animator npc_ani;
+    public PlayerStateMachine playerStatemachine;
 
     protected override BaseState GetInitialState()
     {
@@ -18,6 +19,7 @@ public class NPCStateMachine : StateMachine
     }
     private void Start()
     {
+        playerStatemachine = FindObjectOfType<PlayerStateMachine>();
         base.Start();
     }
 

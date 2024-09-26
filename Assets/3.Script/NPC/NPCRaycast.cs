@@ -38,7 +38,7 @@ public class NPCRaycast : MonoBehaviour
                         Debug.Log("충돌");
                         ScreenManager.instance.WarningScreen_Active();  // 활성화
                     }
-                    player.npc = gameObject.transform;
+                    player.npc = gameObject.transform;  // 
                     Debug.Log(player.npc.name);
                 }    
             }
