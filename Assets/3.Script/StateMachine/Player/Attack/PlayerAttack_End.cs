@@ -19,7 +19,7 @@ public class PlayerAttack_End : BaseState
     {
         playerStateMachine.PlayAnimation("Attack_End");
         ScreenManager.instance.KillingScreen_Active();
-        Debug.Log("어택앤드");
+    //    Debug.Log("어택앤드");
         // 애니메이션
     }
 
@@ -28,7 +28,7 @@ public class PlayerAttack_End : BaseState
         AnimatorStateInfo state = ScreenManager.instance.killingAni.GetCurrentAnimatorStateInfo(0);
             if (state.normalizedTime >= 1.0f)
             { 
-                Debug.Log("넘어간다");
+             //   Debug.Log("넘어간다");
                 playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
             }    
     }

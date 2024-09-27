@@ -2,15 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class ScreenManager : MonoBehaviour
 {
     public static ScreenManager instance = null;
+    private CanvasGroup canvasGroup;
+
+
 
     [SerializeField] private GameObject warningScreen;
     [SerializeField] private GameObject killingScreen;
     [SerializeField] private GameObject startingScreen;
     [SerializeField] private GameObject timer;
+    [SerializeField] private GameObject textBox;
     private PlayerStateMachine player;
     private LastTile lastTile;
     public bool iswarningscreenActive = false;
@@ -30,6 +35,7 @@ public class ScreenManager : MonoBehaviour
         killingAni = killingScreen.GetComponent<Animator>();
         startAni = startingScreen.GetComponent<Animator>();
         warningImage = warningScreen.GetComponent<Image>();
+        canvasGroup = textBox.GetComponent<CanvasGroup>();
 
         //  npcRaycasts = FindObjectsOfType<NPCRaycast>();
         color = warningImage.color;
@@ -117,6 +123,23 @@ public class ScreenManager : MonoBehaviour
             }
         }
     }
+
+
+
+    public void ActiveTextBox()
+    {
+        textBox.SetActive(true);
+        canvasGroup.DOFade(0, 0.3f).From();
+        canvasGroup.transform.DOLocalMove(new Vector2(-2, 512), 0.3f).SetEase(Ease.Unset);
+    }
+
+    public void DisactiveTextBox()
+    {
+        canvasGroup.DOFade(0, 0.3f);
+        canvasGroup.transform.DOLocalMove(new Vector2(10, 200), 0.3f).SetEase(Ease.Unset);
+        textBox.SetActive(false);
+    }
+ 
 
 
 
