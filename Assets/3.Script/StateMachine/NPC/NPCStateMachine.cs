@@ -40,4 +40,9 @@ public class NPCStateMachine : StateMachine
         Debug.Log(stateInfo);
         return stateInfo.IsName(animationName) && stateInfo.normalizedTime >= 1.0f;
     }
+
+    public void OnDead()
+    {
+        Destroy(gameObject);
+    }
 }

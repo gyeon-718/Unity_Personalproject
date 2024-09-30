@@ -6,6 +6,7 @@ public class PlayerAttack_End : BaseState
 {
     private Transform player;
     private PlayerStateMachine playerStateMachine;
+    private RangeView npcRange;
 
 
     public PlayerAttack_End(StateMachine stateMachine, Transform _player) : base("PlayerAttack_End", stateMachine)
@@ -19,6 +20,7 @@ public class PlayerAttack_End : BaseState
     {
         playerStateMachine.PlayAnimation("Attack_End");
         ScreenManager.instance.KillingScreen_Active();
+        npcRange = playerStateMachine.npc.GetComponent<RangeView>();
     //    Debug.Log("어택앤드");
         // 애니메이션
     }
@@ -36,10 +38,12 @@ public class PlayerAttack_End : BaseState
     public override void Exit()
     {
         ScreenManager.instance.WarningScreen_Disactive();
-        ScreenManager.instance.KillingScreen_Disactive(); ;
+        ScreenManager.instance.KillingScreen_Disactive();
+        ScreenManager.instance.npcList.Remove(npcRange);
         playerStateMachine.isWarningEnd = false;
         playerStateMachine.npc.gameObject.SetActive(false);  // 임시
         playerStateMachine.playereye_ani.SetBool("isCrazy", false);
+
 
 
 

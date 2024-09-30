@@ -17,7 +17,7 @@ public class PlayerAttack_Running : BaseState
     public override void Enter()
     {
         playerStateMachine.PlayAnimation("Attack_Running");
-        Debug.Log("·¯´×");
+        //Debug.Log("·¯´×");
         playerStateMachine.navmeshAgent.enabled = true;
        // playerStateMachine.player.LookAt(playerStateMachine.npc.position);
         playerStateMachine.navmeshAgent.SetDestination(playerStateMachine.npc.position);

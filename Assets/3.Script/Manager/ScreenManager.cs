@@ -9,7 +9,7 @@ public class ScreenManager : MonoBehaviour
     public static ScreenManager instance = null;
     private CanvasGroup canvasGroup;
 
-
+    public List<RangeView> npcList;
 
     [SerializeField] private GameObject warningScreen;
     [SerializeField] private GameObject killingScreen;
@@ -19,19 +19,22 @@ public class ScreenManager : MonoBehaviour
     private PlayerStateMachine player;
     private LastTile lastTile;
     public bool iswarningscreenActive = false;
+    public bool isTextBoxActive = false;
+    public bool havetoReturnFollowingCam = true;
 
     public Animator killingAni;
-    [SerializeField]private Animator startAni;
+    [SerializeField] private Animator startAni;
     private Image warningImage;
     private Color color;
 
     public float increaseSpeed = 0.1f;
+    public int npcCount = 0;
 
     private void Start()
     {
         player = FindObjectOfType<PlayerStateMachine>();
         lastTile = FindObjectOfType<LastTile>();
-       
+
         killingAni = killingScreen.GetComponent<Animator>();
         startAni = startingScreen.GetComponent<Animator>();
         warningImage = warningScreen.GetComponent<Image>();
@@ -93,6 +96,7 @@ public class ScreenManager : MonoBehaviour
         {
             iswarningscreenActive = false;
             warningScreen.SetActive(false);
+            Debug.Log(npcCount);
         }
     }
 
@@ -109,12 +113,12 @@ public class ScreenManager : MonoBehaviour
     public void PlayStartingAnimation()
     {
         startingScreen.SetActive(true);
-        Debug.Log("PlayStarting 시작");
+       // Debug.Log("PlayStarting 시작");
 
         AnimatorStateInfo stateInfo = startAni.GetCurrentAnimatorStateInfo(0);
         // 애니메이션이 재생 중인지 확인
         if (stateInfo.IsName("Start"))
-        {   
+        {
             if (stateInfo.normalizedTime >= 1.0f)  // 업데이트에 안넣으면 normalizedTime 갱신 안됨...
             {
                 startingScreen.SetActive(false);
@@ -128,18 +132,25 @@ public class ScreenManager : MonoBehaviour
 
     public void ActiveTextBox()
     {
-        textBox.SetActive(true);
-        canvasGroup.DOFade(0, 0.3f).From();
-        canvasGroup.transform.DOLocalMove(new Vector2(-2, 512), 0.3f).SetEase(Ease.Unset);
+        if (!isTextBoxActive)
+        {
+            textBox.SetActive(true);
+            canvasGroup.DOFade(1, 0.3f);
+            canvasGroup.transform.DOLocalMove(new Vector2(-2, 512), 0.3f).SetEase(Ease.Unset);
+            isTextBoxActive = true;
+        }
     }
 
     public void DisactiveTextBox()
     {
         canvasGroup.DOFade(0, 0.3f);
-        canvasGroup.transform.DOLocalMove(new Vector2(10, 200), 0.3f).SetEase(Ease.Unset);
-        textBox.SetActive(false);
+        canvasGroup.transform.DOLocalMove(new Vector2(-10, 538), 0.3f).SetEase(Ease.Unset);
+        //  textBox.SetActive(false);
+        isTextBoxActive = false;
+
+        
     }
- 
+
 
 
 
