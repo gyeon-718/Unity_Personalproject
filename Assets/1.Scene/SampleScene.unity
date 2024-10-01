@@ -14430,7 +14430,7 @@ GameObject:
   - component: {fileID: 780346990}
   - component: {fileID: 780346993}
   - component: {fileID: 780346992}
-  - component: {fileID: 780346991}
+  - component: {fileID: 780346994}
   m_Layer: 9
   m_Name: NPC_Eyes
   m_TagString: Untagged
@@ -14453,27 +14453,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 23953299}
   m_LocalEulerAnglesHint: {x: -5, y: 0, z: 0}
---- !u!95 &780346991
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780346989}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8ddb17a0c5566a44b8a8790665ad7372, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!23 &780346992
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14524,6 +14503,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780346989}
   m_Mesh: {fileID: 4300000, guid: 9119d161a82d9f54897220351b6c5795, type: 2}
+--- !u!95 &780346994
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780346989}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 08f0382e451842143a96a0550de572ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &780689207
 GameObject:
   m_ObjectHideFlags: 0
@@ -39461,6 +39461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   washParticle: {fileID: 2144201950}
   wallHit: {fileID: 898892519}
+  groundHit: {fileID: 357618267}
 --- !u!1 &2146498621
 GameObject:
   m_ObjectHideFlags: 0

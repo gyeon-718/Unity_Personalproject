@@ -22,7 +22,7 @@ public class PlayerWash : BaseState
     {
         playerStateMachine.player_ani.SetBool("isWashing", true);
         playerStateMachine.waterParticle.Play();
-        playerStateMachine.Water_groundHit.Play();
+      //  playerStateMachine.Water_groundHit.Play();
         Debug.Log("¹°Ã»¼Ò");
     }
 
@@ -64,7 +64,7 @@ public class PlayerWash : BaseState
     {
         playerStateMachine.player_ani.SetBool("isWashing", false);
         playerStateMachine.waterParticle.Stop();
-        playerStateMachine.Water_groundHit.Stop();
+      //  playerStateMachine.Water_groundHit.Stop();
         playerStateMachine.Water_wallHit.Stop();
     }
 

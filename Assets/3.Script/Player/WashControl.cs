@@ -6,11 +6,12 @@ public class WashControl : MonoBehaviour
 {
     public ParticleSystem washParticle;
     public ParticleSystem wallHit;
+    public ParticleSystem groundHit;
     private bool isWall = false;
 
     private void Start()
     {
-        washParticle = GetComponent<ParticleSystem>();
+        //washParticle = GetComponent<ParticleSystem>();
     }
 
     private void Update()
@@ -23,6 +24,7 @@ public class WashControl : MonoBehaviour
 
         // 벽에 닿지 않는 상태로 다시 설정 (다음 충돌 이벤트까지)
         isWall = false;
+       
     }
 
     private void OnParticleCollision(GameObject other)
@@ -44,15 +46,11 @@ public class WashControl : MonoBehaviour
                 // 해당 지점으로 wallHit 파티클 시스템 이동 후 재생
                 wallHit.transform.position = collisionPoint;
                 wallHit.Play();
-                washParticle.Stop();
                 isWall = true;
             }
         }
 
-        if(other.CompareTag("Water"))
-        {
-            Debug.Log("닿음");
-        }
+
     }
 
 

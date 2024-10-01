@@ -11,6 +11,7 @@ public class RangeView : MonoBehaviour
     public float viewAngle_Warn;
 
     public float viewAngle_Direct;
+    
 
     // ∏∂Ω∫≈© 2¡æ
     public LayerMask targetMask, obstacleMask;
@@ -62,11 +63,13 @@ public class RangeView : MonoBehaviour
     {
         visibleTargets.Clear(); // ±‚¡∏ ≈∏∞Ÿ ∏ÆΩ∫∆Æ √ ±‚»≠
         Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask); // Ω√æﬂ ≥ª ≈∏∞Ÿ √£±‚
+        
 
 
         // ≈∏∞Ÿ ≈Ω¡ˆ
         for (int i = 0; i < targetsInViewRadius.Length; i++)
         {
+            Debug.Log("≈∏∞Ÿ√£¿Ω?");
             Transform target = targetsInViewRadius[i].transform; // ≈∏∞Ÿ Transform
             Vector3 dirToTarget = (target.position - transform.position).normalized; // ≈∏∞Ÿ πÊ«‚ ∫§≈Õ
 
