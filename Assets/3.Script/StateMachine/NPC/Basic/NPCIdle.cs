@@ -21,11 +21,12 @@ public class NPCIdle : BaseState
 
     public override void Update()
     {
-        if (npcStateMachine.playerStatemachine.npc ==this.npc&&npcStateMachine.playerStatemachine.isWarningEnd)
+        if (npcStateMachine.playerStatemachine.npc == this.npc
+            && npcStateMachine.playerStatemachine.isWarningEnd)
         {
             npcStateMachine.ChangeState(new NPCShocked(stateMachine, npc));
         }
-       
+
 
 
     }

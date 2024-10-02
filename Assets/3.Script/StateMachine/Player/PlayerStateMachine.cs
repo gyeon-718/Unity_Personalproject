@@ -12,7 +12,7 @@ public enum PlayerType
 public class PlayerStateMachine : StateMachine
 {
     public Transform player;
-    public Transform npc;
+    public Transform npc;  // 추적하기 위해..
     public Animator player_ani;
 
     [HideInInspector] public Animator playereye_ani;

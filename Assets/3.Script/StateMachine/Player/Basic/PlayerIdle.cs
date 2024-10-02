@@ -6,6 +6,7 @@ public class PlayerIdle : BaseState
 {
     private Transform player;
     private PlayerStateMachine playerStateMachine;
+    private NPCStateMachine npc;
 
     public PlayerIdle(StateMachine stateMachine, Transform _player) : base("PlayerIdle", stateMachine)
     {
@@ -17,6 +18,7 @@ public class PlayerIdle : BaseState
     public override void Enter()
     {
         playerStateMachine.PlayAnimation("Idle");
+       // npc = playerStateMachine.npc.GetComponent<NPCStateMachine>();
     }
 
     public override void Update()
@@ -58,7 +60,13 @@ public class PlayerIdle : BaseState
                         break;
                 }
             }
-
+            else if(Input.GetKeyDown(KeyCode.E))
+            {
+               // if(npc.npcType==NPCType.DEAD)
+               // {
+               //     playerStateMachine.ChangeState(new PlayerPickUpBody(stateMachine, player));
+               // }
+            }
             else
             {
                 if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)

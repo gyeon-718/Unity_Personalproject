@@ -7,10 +7,10 @@ public class NPCShocked : BaseState
     private Transform npc;
     private NPCStateMachine npcStateMachine;
 
-    public NPCShocked(StateMachine stateMachine, Transform _player) : base("NPCShocked", stateMachine)
+    public NPCShocked(StateMachine stateMachine, Transform _npc) : base("NPCShocked", stateMachine)
     {
 
-        this.npc = _player;
+        this.npc = _npc;
         this.npcStateMachine = (NPCStateMachine)stateMachine;
     }
 
@@ -22,14 +22,17 @@ public class NPCShocked : BaseState
 
     public override void Update()
     {
-        //  npcStateMachine.ChangeState(new PlayerAttack_Start(stateMachine, player));
+      if(npcStateMachine.npcType==NPCType.DEAD)
+        {
+            npcStateMachine.ChangeState(new NPCDead(stateMachine, npc));
+        }
 
 
     }
 
     public override void Exit()
     {
-        // Exit ·ÎÁ÷
+
     }
 
 
