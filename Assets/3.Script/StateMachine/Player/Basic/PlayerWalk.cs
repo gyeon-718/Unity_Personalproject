@@ -63,6 +63,13 @@ public class PlayerWalk : BaseState
                 }
             }
 
+            else if (playerStateMachine.isCarryingDeadBody)
+            {
+
+                playerStateMachine.ChangeState(new PlayerPickUpBody(stateMachine, player));
+
+            }
+
             else if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
             {
                 playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));

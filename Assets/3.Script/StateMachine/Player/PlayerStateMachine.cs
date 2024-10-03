@@ -28,9 +28,11 @@ public class PlayerStateMachine : StateMachine
 
     public GameObject cleanRange;
     [HideInInspector] public NavMeshAgent navmeshAgent;
-   [HideInInspector] public bool isCleanRangeActive = false;
-    //public bool ischanging = false;
+  
+    
+    [HideInInspector] public bool isCleanRangeActive = false;
     [HideInInspector] public bool isWarningEnd = false;
+    [HideInInspector] public bool isCarryingDeadBody = false;   // 시체 들어올렸을 때 상태전환
     protected override BaseState GetInitialState()
     {
         return new PlayerIdle(this, player);
@@ -42,10 +44,6 @@ public class PlayerStateMachine : StateMachine
         npcs = GameObject.FindGameObjectsWithTag("NPC");
         navmeshAgent = GetComponentInChildren<NavMeshAgent>();
         navmeshAgent.enabled = false;
-        //    for(int i=0;i<npcs.Length;i++)
-        //    {
-        //        Debug.Log(npcs[i]);
-        //    }
 
         base.Start();
     }

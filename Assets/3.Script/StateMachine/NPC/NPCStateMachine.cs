@@ -33,7 +33,7 @@ public class NPCStateMachine : StateMachine
     private void Update()
     {
         base.Update();
-        Debug.Log(npcType);
+       // Debug.Log(npcType);
     }
 
 

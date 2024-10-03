@@ -7,7 +7,7 @@ public class PlayerAttack_End : BaseState
     private Transform player;
     private PlayerStateMachine playerStateMachine;
     private RangeView npcRange;
-    private NPCStateMachine npc;
+    private NPCStateMachine npcStateMachine;
 
     public PlayerAttack_End(StateMachine stateMachine, Transform _player) : base("PlayerAttack_End", stateMachine)
     {
@@ -21,8 +21,8 @@ public class PlayerAttack_End : BaseState
         playerStateMachine.PlayAnimation("Attack_End");
         ScreenManager.instance.KillingScreen_Active();
         npcRange = playerStateMachine.npc.GetComponent<RangeView>();
-        npc = playerStateMachine.npc.GetComponent<NPCStateMachine>();  // 엔피씨 트랜스폼의 스테이트머신 가져와서 타입 바꾸기
-        npc.npcType = NPCType.DEAD;
+        npcStateMachine = playerStateMachine.npc.GetComponent<NPCStateMachine>();  // 엔피씨 트랜스폼의 스테이트머신 가져와서 타입 바꾸기
+        npcStateMachine.npcType = NPCType.DEAD;
         //    Debug.Log("어택앤드");
         // 애니메이션
     }

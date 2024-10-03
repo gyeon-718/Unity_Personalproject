@@ -4,13 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PlayerDetect
   - CleanRange
   - NPC
   - Destroy
   - Wall
   - Water
   - Gerbil
+  - DeadBody
   layers:
   - Default
   - TransparentFX

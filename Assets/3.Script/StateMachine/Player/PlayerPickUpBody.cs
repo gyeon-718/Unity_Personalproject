@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PlayerPickUpBody : BaseState
 {
-    private float moveSpeed = 2.5f;
-    private float rotateSpeed = 5f;
-
     private PlayerStateMachine playerStateMachine;
     private Transform player;
 
@@ -19,15 +16,18 @@ public class PlayerPickUpBody : BaseState
     public override void Enter()
     {
         playerStateMachine.PlayAnimation("PickUp_Body");
+        Debug.Log("픽업 들어온다");
     }
 
     public override void Update()
     {
-      
-
-        
-
-
+        if (playerStateMachine.isAnimationEnd("PickUp_Body"))
+        {
+            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            {
+                playerStateMachine.ChangeState(new PlayerCarryBody(stateMachine, player));
+            }
+        }
 
     }
 
