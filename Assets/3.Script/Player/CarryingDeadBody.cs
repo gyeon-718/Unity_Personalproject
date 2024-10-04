@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// enum PressEType
+//{
+//    PICKUP,
+//    PUTDOWN
+//};
 public class CarryingDeadBody : MonoBehaviour
 {
     public Transform carryPosition;
@@ -14,10 +19,13 @@ public class CarryingDeadBody : MonoBehaviour
 
     private Animator deadBody_ani;
 
+    //  private PressEType pType;
+
     private void Start()
     {
         playerStateMachine = GetComponentInParent<PlayerStateMachine>();
         deadBodyInRange = null;
+        //  pType = PressEType.PICKUP;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -50,24 +58,32 @@ public class CarryingDeadBody : MonoBehaviour
 
     private void Update()
     {
-        // 시체를 들 수 있는 상태에서 E 키를 누르면 시체를 들기
-        if (canCarry && Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("E 누름");
-            playerStateMachine.isCarryingDeadBody = true;
-            CarryBody(deadBodyInRange);
+            if (canCarry && !playerStateMachine.isCarryingDeadBody)
+            {
+                Debug.Log("캐리바디");
+                playerStateMachine.isCarryingDeadBody = true;
+                CarryBody(deadBodyInRange);
+            }
+            else if (playerStateMachine.isCarryingDeadBody)
+            {
+                Debug.Log("풋다운바디");
+                PutDownBody();
+            }
         }
+
     }
 
     public void CarryBody(GameObject _deadBody)
     {
         deadBodyInRange = _deadBody;
-        Vector3 deadBodyPosition = new Vector3(playerStateMachine.player.forward.x-5f , 0,
-           playerStateMachine.player.forward.z-3f);
+        Vector3 deadBodyPosition = new Vector3(playerStateMachine.player.forward.x, 0,
+           playerStateMachine.player.forward.z);
         Debug.Log("매서드 발동");
         deadBodyInRange.transform.position = deadBodyPosition;
         deadBodyInRange.transform.position = carryPosition.position;
-       // deadBodyInRange.transform.SetParent(carryPosition); // 플레이어의 자식으로 설정
+        deadBodyInRange.transform.SetParent(carryPosition); // 플레이어의 자식으로 설정
 
         //deadBodyInRange.transform.position = carryPosition.position; // 플레이어 앞에 위치시키기
 
@@ -76,6 +92,30 @@ public class CarryingDeadBody : MonoBehaviour
         //  _deadBody.transform.position=new Vector3()
         deadBody_ani.SetBool("isPickedUp", true);
 
+    }
+
+    public void PutDownBody()
+    {
+
+        Debug.Log("풋다운");
+        GameObject deadBody = GameObject.Find("DeadBody");
+        // 부모 관계 해제
+        deadBody.transform.SetParent(null);
+
+        // 시체를 내려놓을 위치 설정 (현재 플레이어 앞에 내려놓는 예시)
+        Vector3 putDownPosition = playerStateMachine.player.position + playerStateMachine.player.forward; // 플레이어 앞 2미터 위치
+        deadBody.transform.position = putDownPosition;
+
+        Animator deadBodyani = deadBody.GetComponent<Animator>();
+        // 애니메이션 상태 변경
+        deadBodyani.SetBool("isPickedUp", false);
+        deadBodyani.SetBool("isPutDown", false);
+
+
+        // 플레이어 상태 변경
+        playerStateMachine.isCarryingDeadBody = false;
+
+        Debug.Log("시체 내려놓음");
 
     }
 }

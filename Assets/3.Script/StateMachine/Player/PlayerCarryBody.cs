@@ -24,12 +24,8 @@ public class PlayerCarryBody : BaseState
     {
         Walk();
 
-        if(Input.GetKeyDown(KeyCode.E))
-        {
 
-        }
-
-        else if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
         {
             playerStateMachine.ChangeState(new PlayerIdle(stateMachine, player));
         }

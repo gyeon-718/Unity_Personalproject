@@ -44,7 +44,7 @@ public class RangeView : MonoBehaviour
         {
             ScreenManager.instance.WarningScreen_Disactive(); // 경고 스크린 비활성화
                                                               //  Debug.Log("플레이어 감지 해제: 경고 스크린 비활성화");
-            Debug.Log(ScreenManager.instance.npcList.Count);
+         //   Debug.Log(ScreenManager.instance.npcList.Count);
         }
 
 

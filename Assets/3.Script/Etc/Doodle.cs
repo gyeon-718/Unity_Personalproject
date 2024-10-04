@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Doodle : MonoBehaviour
 {
-    public ParticleSystem waterParticle;
-
     //인스펙터에서 조절하삼......
     [SerializeField] private float decreaseScale;  // 줄어드는 스케일
     [SerializeField] private float destroyScale;  // 이 크기보다 작아지면 오브젝트를 삭제

@@ -18,6 +18,7 @@ public class PlayerIdle : BaseState
     public override void Enter()
     {
         playerStateMachine.PlayAnimation("Idle");
+        Debug.Log("æ∆¿ÃµÈ");
         // npc = playerStateMachine.npc.GetComponent<NPCStateMachine>();
     }
 
@@ -60,27 +61,24 @@ public class PlayerIdle : BaseState
                         break;
                 }
             }
+
             else if (playerStateMachine.isCarryingDeadBody)
-            {
-
-                playerStateMachine.ChangeState(new PlayerPickUpBody(stateMachine, player));
-
-            }
-            else
             {
                 if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
                 {
-                    if (!playerStateMachine.isCarryingDeadBody)
-                    {
-                        playerStateMachine.ChangeState(new PlayerWalk(stateMachine, player));
-                    }
-                    else
-                    {
-                        playerStateMachine.ChangeState(new PlayerCarryBody(stateMachine, player));
-                    }
-
+                    playerStateMachine.ChangeState(new PlayerCarryBody(stateMachine, player));
+                }
+                else
+                {
+                    playerStateMachine.ChangeState(new PlayerPickUpBody(stateMachine, player));
                 }
             }
+
+            else if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            {
+                    playerStateMachine.ChangeState(new PlayerWalk(stateMachine, player));              
+            }
+
 
         }
     }
