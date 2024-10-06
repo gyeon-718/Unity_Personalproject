@@ -91,6 +91,7 @@ public class CarryingDeadBody : MonoBehaviour
         //deadBodyInRange.transform.rotation = carryPosition.rotation;
         //  _deadBody.transform.position=new Vector3()
         deadBody_ani.SetBool("isPickedUp", true);
+        deadBody_ani.SetBool("isPutDown", false);
 
     }
 
@@ -99,17 +100,17 @@ public class CarryingDeadBody : MonoBehaviour
 
         Debug.Log("풋다운");
         GameObject deadBody = GameObject.Find("DeadBody");
+        Animator deadBodyani = deadBody.GetComponent<Animator>();
         // 부모 관계 해제
+        deadBodyani.SetBool("isPickedUp", false);
+        deadBodyani.SetBool("isPutDown", true);
         deadBody.transform.SetParent(null);
 
         // 시체를 내려놓을 위치 설정 (현재 플레이어 앞에 내려놓는 예시)
         Vector3 putDownPosition = playerStateMachine.player.position + playerStateMachine.player.forward; // 플레이어 앞 2미터 위치
         deadBody.transform.position = putDownPosition;
 
-        Animator deadBodyani = deadBody.GetComponent<Animator>();
         // 애니메이션 상태 변경
-        deadBodyani.SetBool("isPickedUp", false);
-        deadBodyani.SetBool("isPutDown", false);
 
 
         // 플레이어 상태 변경
