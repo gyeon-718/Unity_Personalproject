@@ -58,7 +58,7 @@ public class RangeView : MonoBehaviour
         {
             yield return new WaitForSeconds(delay);
             FindVisibleTargets();
-            Debug.Log("코루틴 실행중");
+          //  Debug.Log("코루틴 실행중");
         }
 
     }
@@ -74,7 +74,7 @@ public class RangeView : MonoBehaviour
         // 타겟 탐지
         for (int i = 0; i < targetsInViewRadius.Length; i++)
         {
-            Debug.Log("타겟찾음?");
+           // Debug.Log("타겟찾음?");
             Transform target = targetsInViewRadius[i].transform; // 타겟 Transform
             Vector3 dirToTarget = (target.position - transform.position).normalized; // 타겟 방향 벡터
 
@@ -96,12 +96,12 @@ public class RangeView : MonoBehaviour
             }
             else
             {
-                Debug.Log("리스트제거");
+               // Debug.Log("리스트제거");
                 if (ScreenManager.instance.npcCount == 0) return;
                 if (ScreenManager.instance.npcList.Contains(this)) visibleTargets.Remove(target);
 
                 ScreenManager.instance.npcList.Remove(this);
-                Debug.Log(ScreenManager.instance.npcList.Count + "11");
+              //  Debug.Log(ScreenManager.instance.npcList.Count + "11");
             }
 
             if (visibleTargets.Count != 0)

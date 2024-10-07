@@ -23,7 +23,7 @@ public class PlayerWash : BaseState
         playerStateMachine.player_ani.SetBool("isWashing", true);
         playerStateMachine.waterParticle.Play();
         playerStateMachine.Water_groundHit.Play();
-        Debug.Log("拱没家");
+      //  Debug.Log("拱没家");
     }
 
     public override void Update()

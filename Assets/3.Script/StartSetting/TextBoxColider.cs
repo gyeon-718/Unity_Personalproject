@@ -26,7 +26,7 @@ public class TextBoxColider : MonoBehaviour
         {
             ScreenManager.instance.DisactiveTextBox();
             cinemachine.SetFollowingCam();
-            Debug.Log("디스액티브 텍스트박스");
+            //Debug.Log("디스액티브 텍스트박스");
         }
     }
 }

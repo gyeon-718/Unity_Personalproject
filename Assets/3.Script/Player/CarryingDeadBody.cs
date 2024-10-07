@@ -2,11 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// enum PressEType
-//{
-//    PICKUP,
-//    PUTDOWN
-//};
 public class CarryingDeadBody : MonoBehaviour
 {
     public Transform carryPosition;
@@ -38,9 +33,9 @@ public class CarryingDeadBody : MonoBehaviour
             if (deadBodyInRange != null)
             {
                 deadBody_ani = deadBodyInRange.GetComponent<Animator>();
-                Debug.Log("널아님");
+               // Debug.Log("널아님");
             }
-            Debug.Log("옮기기 가능");
+         //   Debug.Log("옮기기 가능");
             // 도움말UI 활성화 메서드 만들고
         }
     }
@@ -52,7 +47,7 @@ public class CarryingDeadBody : MonoBehaviour
             // 시체를 들 수 없는 상태로 변경
             canCarry = false;
             deadBodyInRange = null;
-            Debug.Log("시체 범위에서 벗어남");
+          //  Debug.Log("시체 범위에서 벗어남");
         }
     }
 
@@ -62,13 +57,13 @@ public class CarryingDeadBody : MonoBehaviour
         {
             if (canCarry && !playerStateMachine.isCarryingDeadBody)
             {
-                Debug.Log("캐리바디");
+             //   Debug.Log("캐리바디");
                 playerStateMachine.isCarryingDeadBody = true;
                 CarryBody(deadBodyInRange);
             }
             else if (playerStateMachine.isCarryingDeadBody)
             {
-                Debug.Log("풋다운바디");
+            //    Debug.Log("풋다운바디");
                 PutDownBody();
             }
         }
@@ -80,7 +75,7 @@ public class CarryingDeadBody : MonoBehaviour
         deadBodyInRange = _deadBody;
         Vector3 deadBodyPosition = new Vector3(playerStateMachine.player.forward.x, 0,
            playerStateMachine.player.forward.z);
-        Debug.Log("매서드 발동");
+     //   Debug.Log("매서드 발동");
         deadBodyInRange.transform.position = deadBodyPosition;
         deadBodyInRange.transform.position = carryPosition.position;
         deadBodyInRange.transform.SetParent(carryPosition); // 플레이어의 자식으로 설정
@@ -98,7 +93,7 @@ public class CarryingDeadBody : MonoBehaviour
     public void PutDownBody()
     {
 
-        Debug.Log("풋다운");
+     //   Debug.Log("풋다운");
         GameObject deadBody = GameObject.Find("DeadBody");
         Animator deadBodyani = deadBody.GetComponent<Animator>();
         // 부모 관계 해제
@@ -116,7 +111,7 @@ public class CarryingDeadBody : MonoBehaviour
         // 플레이어 상태 변경
         playerStateMachine.isCarryingDeadBody = false;
 
-        Debug.Log("시체 내려놓음");
+       // Debug.Log("시체 내려놓음");
 
     }
 }

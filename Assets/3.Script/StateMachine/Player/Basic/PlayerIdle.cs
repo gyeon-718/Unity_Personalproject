@@ -18,7 +18,7 @@ public class PlayerIdle : BaseState
     public override void Enter()
     {
         playerStateMachine.PlayAnimation("Idle");
-        Debug.Log("아이들");
+       // Debug.Log("아이들");
         // npc = playerStateMachine.npc.GetComponent<NPCStateMachine>();
     }
 
