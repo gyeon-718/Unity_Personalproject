@@ -19,13 +19,11 @@ public class PlayerAttack_Running : BaseState
         playerStateMachine.PlayAnimation("Attack_Running");
         //Debug.Log("러닝");
         playerStateMachine.navmeshAgent.enabled = true;
-       // playerStateMachine.player.LookAt(playerStateMachine.npc.position);
         playerStateMachine.navmeshAgent.SetDestination(playerStateMachine.npc.position);
     }
 
     public override void Update()
     {
-        // float newDistanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
         // 플레이어가 npc랑 가까워지면
         if (Vector3.Distance(playerStateMachine.player.transform.position, playerStateMachine.npc.position) < 1f) 
         {

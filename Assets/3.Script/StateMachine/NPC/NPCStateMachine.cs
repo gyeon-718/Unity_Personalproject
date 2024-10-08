@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public enum NPCType
 {
@@ -16,7 +17,11 @@ public class NPCStateMachine : StateMachine
     public PlayerStateMachine playerStatemachine;
     public NPCType npcType;
 
+    public List<Transform> npcTargetPoints;  // 모든 타겟포인트 리스트
+    private List<Transform> canTargetingPoints;  // 사용할 수 있는 타겟팅 리스트
 
+  [HideInInspector]  public NavMeshAgent npcNavmesh;
+    public Transform selectPoint;
     public bool isPickedUpByPlayer=false;
 
     protected override BaseState GetInitialState()
@@ -26,7 +31,11 @@ public class NPCStateMachine : StateMachine
     private void Start()
     {
         playerStatemachine = FindObjectOfType<PlayerStateMachine>();
+        npcNavmesh = GetComponent<NavMeshAgent>();
         npcType = NPCType.ALIVE;
+        selectPoint = null;
+
+        canTargetingPoints = new List<Transform>(npcTargetPoints);
         base.Start();
     }
 
@@ -53,4 +62,26 @@ public class NPCStateMachine : StateMachine
     {
         Destroy(gameObject);
     }
+
+    public Transform GetRandomPoint()  // 
+    {
+        if(canTargetingPoints.Count==0)
+        {
+            return null;
+        }
+        int randomIndex = Random.Range(0, canTargetingPoints.Count);
+        Transform selectPoint = canTargetingPoints[randomIndex];
+        canTargetingPoints.RemoveAt(randomIndex);
+        return selectPoint;
+    }
+
+    public void ReturnPoint(Transform wayPoint)
+    {
+        if(!canTargetingPoints.Contains(wayPoint))
+        {
+            canTargetingPoints.Add(wayPoint);
+        }    
+    }
+
+
 }

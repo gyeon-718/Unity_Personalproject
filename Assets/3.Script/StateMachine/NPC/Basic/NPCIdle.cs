@@ -33,20 +33,21 @@ public class NPCIdle : BaseState
         {
             npcStateMachine.ChangeState(new NPCShocked(stateMachine, npc));
         }
-
-        if(currenttime>= randomSecond)
-
+        else
         {
-            npcStateMachine.ChangeState(new NPCWalk(stateMachine, npc));
-        }
+            if (currenttime >= randomSecond)
 
+            {
+                npcStateMachine.ChangeState(new NPCWalk(stateMachine, npc));
+            }
+        }
 
 
     }
 
     public override void Exit()
     {
-        // Exit ·ÎÁ÷
+        currenttime = 0;
     }
 
 
