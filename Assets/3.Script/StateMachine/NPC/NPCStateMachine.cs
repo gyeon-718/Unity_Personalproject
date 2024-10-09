@@ -17,8 +17,8 @@ public class NPCStateMachine : StateMachine
     public PlayerStateMachine playerStatemachine;
     public NPCType npcType;
 
-    public List<Transform> npcTargetPoints;  // 모든 타겟포인트 리스트
-    private List<Transform> canTargetingPoints;  // 사용할 수 있는 타겟팅 리스트
+    //public List<Transform> npcTargetPoints;  // 모든 타겟포인트 리스트
+    //private List<Transform> canTargetingPoints;  // 사용할 수 있는 타겟팅 리스트
 
   [HideInInspector]  public NavMeshAgent npcNavmesh;
     public Transform selectPoint;
@@ -35,7 +35,7 @@ public class NPCStateMachine : StateMachine
         npcType = NPCType.ALIVE;
         selectPoint = null;
 
-        canTargetingPoints = new List<Transform>(npcTargetPoints);
+     //   canTargetingPoints = new List<Transform>(npcTargetPoints);
         base.Start();
     }
 
@@ -63,25 +63,25 @@ public class NPCStateMachine : StateMachine
         Destroy(gameObject);
     }
 
-    public Transform GetRandomPoint()  // 
-    {
-        if(canTargetingPoints.Count==0)
-        {
-            return null;
-        }
-        int randomIndex = Random.Range(0, canTargetingPoints.Count);
-        Transform selectPoint = canTargetingPoints[randomIndex];
-        canTargetingPoints.RemoveAt(randomIndex);
-        return selectPoint;
-    }
+  //  public Transform GetRandomPoint()  // 
+  //  {
+  //      if(canTargetingPoints.Count==0)
+  //      {
+  //          return null;
+  //      }
+  //      int randomIndex = Random.Range(0, canTargetingPoints.Count);
+  //      Transform selectPoint = canTargetingPoints[randomIndex];
+  //      canTargetingPoints.RemoveAt(randomIndex);
+  //      return selectPoint;
+  //  }
 
-    public void ReturnPoint(Transform wayPoint)
-    {
-        if(!canTargetingPoints.Contains(wayPoint))
-        {
-            canTargetingPoints.Add(wayPoint);
-        }    
-    }
-
+//    public void ReturnPoint(Transform wayPoint)
+//    {
+//        if(!canTargetingPoints.Contains(wayPoint))
+//        {
+//            canTargetingPoints.Add(wayPoint);
+//        }    
+//    }
+//
 
 }

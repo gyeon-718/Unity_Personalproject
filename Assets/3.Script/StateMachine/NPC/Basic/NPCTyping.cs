@@ -33,6 +33,6 @@ public class NPCTyping : BaseState
 
     public override void Exit()
     {
-        npcStateMachine.ReturnPoint(npcStateMachine.selectPoint);
+        WaypointManager.instance.ReturnPoint(npcStateMachine.selectPoint);
     }
 }

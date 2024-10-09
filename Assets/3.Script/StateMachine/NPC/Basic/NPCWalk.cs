@@ -21,7 +21,7 @@ public class NPCWalk : BaseState
     {
         npcStateMachine.PlayAnimation("Walk");
         Debug.Log("¿öÅ©");
-        npcStateMachine.selectPoint = npcStateMachine.GetRandomPoint();
+        npcStateMachine.selectPoint = WaypointManager.instance.GetRandomPoint();
       //  npcStateMachine.selectPoint = targetPoint;
         npcStateMachine.npcNavmesh.SetDestination(npcStateMachine.selectPoint.position);
 

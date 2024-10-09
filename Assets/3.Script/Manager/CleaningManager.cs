@@ -18,6 +18,8 @@ public class AreaProgressManager : MonoBehaviour
     private int totalAreas;
     private int clearedAreas = 0;
 
+    public GameObject clearColider;
+
     void Start()
     {
         totalAreas = areas.Length; // 총 구역 수
@@ -34,8 +36,12 @@ public class AreaProgressManager : MonoBehaviour
         clearedAreas = 0; // 초기화 후 다시 카운팅
         foreach (Area area in areas)
         {
-            if (CheckRemainingObjects(area) == 0)
+            if (CheckRemainingObjects(area) <= 5)
             {
+                for(int i=0;i<area.objectsToDestroy.Length;i++)
+                {
+                    Destroy(area.objectsToDestroy[i]);
+                }
                 area.isCleared = true; // 해당 구역이 클리어됨
             }
             else
@@ -53,6 +59,7 @@ public class AreaProgressManager : MonoBehaviour
         if (clearedAreas >= totalAreas)
         {
             Debug.Log("Game Clear! All areas cleared.");
+            clearColider.SetActive(true);
           //  progressText.text = "Game Cleared!";
         }
     }

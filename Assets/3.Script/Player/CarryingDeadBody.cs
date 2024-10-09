@@ -9,7 +9,8 @@ public class CarryingDeadBody : MonoBehaviour
     private PlayerStateMachine playerStateMachine;
     //private GameObject carryDeadBody;
 
-    private bool canCarry = false; // 시체를 들 수 있는 상태 여부 저장
+    private bool canCarry = false; // 시체를 들 수 있는가?
+    private bool haveDeadBody = false;  //  시체를 이미 들고 있는가?
     private GameObject deadBodyInRange; // 범위 안의 시체 오브젝트 저장
 
     private Animator deadBody_ani;
@@ -55,7 +56,7 @@ public class CarryingDeadBody : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (canCarry && !playerStateMachine.isCarryingDeadBody)
+            if (canCarry && !playerStateMachine.isCarryingDeadBody&& haveDeadBody)
             {
              //   Debug.Log("캐리바디");
                 playerStateMachine.isCarryingDeadBody = true;
@@ -72,7 +73,8 @@ public class CarryingDeadBody : MonoBehaviour
 
     public void CarryBody(GameObject _deadBody)
     {
-        deadBodyInRange = _deadBody;
+        haveDeadBody = true;
+           deadBodyInRange = _deadBody;
         Vector3 deadBodyPosition = new Vector3(playerStateMachine.player.forward.x, 0,
            playerStateMachine.player.forward.z);
      //   Debug.Log("매서드 발동");
@@ -110,7 +112,7 @@ public class CarryingDeadBody : MonoBehaviour
 
         // 플레이어 상태 변경
         playerStateMachine.isCarryingDeadBody = false;
-
+        haveDeadBody = false;
        // Debug.Log("시체 내려놓음");
 
     }

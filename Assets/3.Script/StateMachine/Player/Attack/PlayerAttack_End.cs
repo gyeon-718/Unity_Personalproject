@@ -43,6 +43,7 @@ public class PlayerAttack_End : BaseState
         ScreenManager.instance.KillingScreen_Disactive();
         ScreenManager.instance.npcList.Remove(npcRange);
         playerStateMachine.isWarningEnd = false;
+        playerStateMachine.npc = null;  //  타겟팅 해제
 
         // playerStateMachine.npc.gameObject.SetActive(false);  // 임시
         playerStateMachine.playereye_ani.SetBool("isCrazy", false);
