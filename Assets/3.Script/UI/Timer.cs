@@ -12,7 +12,9 @@ public class Timer : MonoBehaviour
     [SerializeField] private float time;
     [SerializeField] private float currentTime;
 
-    [SerializeField] private Transform timer;
+    [SerializeField] public Transform timer;
+
+    public GameObject completeUI;
 
 
     private int miniute;
@@ -49,5 +51,13 @@ public class Timer : MonoBehaviour
                 yield break;
             }
         }
+    }
+
+    public void DisactiveTimer()
+    {
+        StopCoroutine(StartTimer());
+
+        timer.transform.DOLocalMoveY(700f, 0.5f).SetEase(Ease.Unset);
+
     }
 }

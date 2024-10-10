@@ -32,6 +32,7 @@ public class NPCWalk : BaseState
         if (npcStateMachine.playerStatemachine.npc == this.npc
     && npcStateMachine.playerStatemachine.isWarningEnd)
         {
+            npcStateMachine.npcNavmesh.isStopped = true; // 목적지 이동 중지
             npcStateMachine.ChangeState(new NPCShocked(stateMachine, npc));
         }
         else
