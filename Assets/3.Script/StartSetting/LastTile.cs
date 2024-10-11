@@ -8,12 +8,15 @@ public class LastTile : MonoBehaviour
     [SerializeField] private GameObject helperUI;
     private bool isOpenedDoor = false;    // UI 다시 켜짐 방지
 
+    private TextBoxColider textboxColider;
+
     public bool haveActivedStart_ani = false;
 
 
     private void Start()
     {
         door_Ani = GetComponent<Animator>();
+        textboxColider = FindObjectOfType<TextBoxColider>();
         helperUI.SetActive(false);
     }
 
@@ -37,6 +40,7 @@ public class LastTile : MonoBehaviour
             helperUI.SetActive(false);
             door_Ani.SetBool("havetoOpen", true);
             isOpenedDoor = true;
+            textboxColider.isStartStage = true;  // 텍스트박스 다시 켜짐 방지
         }
     }
 

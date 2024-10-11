@@ -16,6 +16,8 @@ public class ScreenManager : MonoBehaviour
     [SerializeField] private GameObject startingScreen;
     [SerializeField] private GameObject timer;
     [SerializeField] private GameObject textBox;
+    [SerializeField] private GameObject gameClear;
+    [SerializeField] private GameObject swipe;
     private PlayerStateMachine player;
     private LastTile lastTile;
     public bool iswarningscreenActive = false;
@@ -23,6 +25,8 @@ public class ScreenManager : MonoBehaviour
     public bool havetoReturnFollowingCam = true;
 
     public Animator killingAni;
+    private Animator clearAni;
+    private Animator swipeAni;
     [SerializeField] private Animator startAni;
     private Image warningImage;
     private Color color;
@@ -39,6 +43,8 @@ public class ScreenManager : MonoBehaviour
         startAni = startingScreen.GetComponent<Animator>();
         warningImage = warningScreen.GetComponent<Image>();
         canvasGroup = textBox.GetComponent<CanvasGroup>();
+        clearAni = gameClear.GetComponent<Animator>();
+        swipeAni = swipe.GetComponent<Animator>();
 
         //  npcRaycasts = FindObjectsOfType<NPCRaycast>();
         color = warningImage.color;
@@ -129,7 +135,6 @@ public class ScreenManager : MonoBehaviour
     }
 
 
-
     public void ActiveTextBox()
     {
         if (!isTextBoxActive)
@@ -150,12 +155,36 @@ public class ScreenManager : MonoBehaviour
 
         
     }
+    public void ActiveCompleteUI()
+    {
+        gameClear.SetActive(true);
+        clearAni.SetTrigger("isCleared");
+        AnimatorStateInfo stateinfo = clearAni.GetCurrentAnimatorStateInfo(0);
+        if(stateinfo.normalizedTime>=1.0f)
+        {
+            swipe.SetActive(true);
+        }
+    }
 
-
-
-
-
-
-
+    public void ActiveTimesUPUI()
+    {
+        gameClear.SetActive(true);
+        clearAni.SetTrigger("isTimesUp");
+        AnimatorStateInfo stateinfo = clearAni.GetCurrentAnimatorStateInfo(0);
+        if (stateinfo.normalizedTime >= 1.0f)
+        {
+            swipe.SetActive(true);
+        }
+    }
 
 }
+
+
+
+
+
+
+
+
+
+

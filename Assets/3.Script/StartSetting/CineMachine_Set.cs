@@ -47,7 +47,6 @@ public class CineMachine_Set : MonoBehaviour
 
         blendCamera.m_Instructions[0].m_Hold = 0.0f;
         blendCamera.m_Instructions[0].m_Blend.m_Time = 1.0f; // 0.5초 동안 전환
-
     }
 
     public void SetEnterCam()
@@ -59,7 +58,6 @@ public class CineMachine_Set : MonoBehaviour
 
         blendCamera.m_Instructions[0].m_Hold = 0.0f;
         blendCamera.m_Instructions[0].m_Blend.m_Time = 1.0f; // 0.5초 동안 전환
-
     }
 
 

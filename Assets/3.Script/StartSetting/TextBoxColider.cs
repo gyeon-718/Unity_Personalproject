@@ -5,6 +5,7 @@ using UnityEngine;
 public class TextBoxColider : MonoBehaviour
 {
     private CineMachine_Set cinemachine;
+    public bool isStartStage = false;
 
     private void Start()
     {
@@ -13,7 +14,7 @@ public class TextBoxColider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isStartStage)
         {
             ScreenManager.instance.ActiveTextBox();
             cinemachine.SetEnterCam();
@@ -22,7 +23,7 @@ public class TextBoxColider : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isStartStage)
         {
             ScreenManager.instance.DisactiveTextBox();
             cinemachine.SetFollowingCam();

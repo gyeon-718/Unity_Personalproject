@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AreaProgressManager : MonoBehaviour
+public class CleaningManager : MonoBehaviour
 {
     [System.Serializable]
     public class Area
@@ -23,7 +23,7 @@ public class AreaProgressManager : MonoBehaviour
     void Start()
     {
         totalAreas = areas.Length; // 총 구역 수
-      //  UpdateProgress();
+                                  //  UpdateProgress();
     }
 
     void Update()
@@ -38,7 +38,7 @@ public class AreaProgressManager : MonoBehaviour
         {
             if (CheckRemainingObjects(area) <= 5)
             {
-                for(int i=0;i<area.objectsToDestroy.Length;i++)
+                for (int i = 0; i < area.objectsToDestroy.Length; i++)
                 {
                     Destroy(area.objectsToDestroy[i]);
                 }
@@ -54,13 +54,13 @@ public class AreaProgressManager : MonoBehaviour
                 clearedAreas++;
             }
         }
-       // UpdateProgress(); // UI 진행도 업데이트
+        // UpdateProgress(); // UI 진행도 업데이트
 
         if (clearedAreas >= totalAreas)
         {
             Debug.Log("Game Clear! All areas cleared.");
             clearColider.SetActive(true);
-          //  progressText.text = "Game Cleared!";
+            //  progressText.text = "Game Cleared!";
         }
     }
 
@@ -77,9 +77,15 @@ public class AreaProgressManager : MonoBehaviour
         return remaining;
     }
 
-   // private void UpdateProgress()
-   // {
-   //     float progress = (float)clearedAreas / totalAreas * 100;
-   //     progressText.text = "Total Progress: " + progress.ToString("F2") + "%";
-   // }
+    // private void UpdateProgress()
+    // {
+    //     float progress = (float)clearedAreas / totalAreas * 100;
+    //     progressText.text = "Total Progress: " + progress.ToString("F2") + "%";
+    // }
+
+
+
+
+
+
 }

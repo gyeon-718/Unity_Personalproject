@@ -21,11 +21,23 @@ public class GameClearColider : MonoBehaviour
         timer = FindObjectOfType<Timer>();
         completeUI_Ani = completeUI.GetComponent<Animator>();
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            door_Ani.SetBool("havetoOpen", false);
+            timer.DisactiveTimer();
+            ScreenManager.instance.Invoke("ActiveCompleteUI", 0.6f);
+            isAnimationEnd = true;
+        }
+    }
+
     private void Update()
     {
         if (isAnimationEnd)
         {
-            AnimatorStateInfo stateInfo = completeUI_Ani.GetCurrentAnimatorStateInfo(0);
+            ScreenManager.instance.Invoke("ActiveCompleteUI", 0.6f);
+           AnimatorStateInfo stateInfo = completeUI_Ani.GetCurrentAnimatorStateInfo(0);
             if (stateInfo.normalizedTime >= 1)
             {
                 swipeUI.SetActive(true);
@@ -34,22 +46,5 @@ public class GameClearColider : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            door_Ani.SetBool("havetoOpen", false);
-            timer.DisactiveTimer();
-            Invoke("ActiveCompleteUI", 0.6f);
-            isAnimationEnd = true;
-            AnimatorStateInfo stateInfo = completeUI_Ani.GetCurrentAnimatorStateInfo(0);
-            if (stateInfo.normalizedTime >= 1) swipeUI.SetActive(true);
 
-        }
-    }
-
-    private void ActiveCompleteUI()
-    {
-        completeUI.SetActive(true);
-    }
 }

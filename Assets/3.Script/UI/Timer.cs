@@ -14,13 +14,13 @@ public class Timer : MonoBehaviour
 
     [SerializeField] public Transform timer;
 
+
     public GameObject completeUI;
+    private bool isTimeOut = false;
 
 
     private int miniute;
     private int second;
-
-
 
     private void Awake()
     {
@@ -48,8 +48,18 @@ public class Timer : MonoBehaviour
             if (currentTime <= 0)
             {
                 currentTime = 0;
+                isTimeOut = true;
                 yield break;
             }
+        }
+    }
+    private void Update()
+    {
+        if (isTimeOut)
+        {
+            DisactiveTimer();
+            ScreenManager.instance.Invoke("ActiveTimesUPUI", 0.6f);
+            isTimeOut = false;
         }
     }
 
