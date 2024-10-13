@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameClearColider : MonoBehaviour
 {
@@ -36,12 +37,13 @@ public class GameClearColider : MonoBehaviour
     {
         if (isAnimationEnd)
         {
-            ScreenManager.instance.Invoke("ActiveCompleteUI", 0.6f);
+          // ScreenManager.instance.Invoke("ActiveCompleteUI", 0.6f);
            AnimatorStateInfo stateInfo = completeUI_Ani.GetCurrentAnimatorStateInfo(0);
             if (stateInfo.normalizedTime >= 1)
             {
                 swipeUI.SetActive(true);
                 isAnimationEnd = false;
+                SceneManager.LoadScene("LevelSelect");
             }
         }
 

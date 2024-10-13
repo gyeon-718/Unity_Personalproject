@@ -56,13 +56,14 @@ public class CarryingDeadBody : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (canCarry && !playerStateMachine.isCarryingDeadBody&& haveDeadBody)
+            Debug.Log("이 ㄴㄹ럿음?");
+            if (canCarry && !playerStateMachine.isCarryingDeadBody&& !haveDeadBody)
             {
              //   Debug.Log("캐리바디");
                 playerStateMachine.isCarryingDeadBody = true;
                 CarryBody(deadBodyInRange);
             }
-            else if (playerStateMachine.isCarryingDeadBody)
+            else if (playerStateMachine.isCarryingDeadBody && haveDeadBody)
             {
             //    Debug.Log("풋다운바디");
                 PutDownBody();

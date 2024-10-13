@@ -79,6 +79,7 @@ public class ScreenManager : MonoBehaviour
 
     private IEnumerator WarningScreen_co()
     {
+        color = warningImage.color;
         color.a = 0;
         // 경고 화면의 알파값을 0에서 1로 서서히 증가
         while (color.a < 0.7f)
@@ -93,6 +94,7 @@ public class ScreenManager : MonoBehaviour
             yield return null; // 다음 프레임 대기
         }
         player.isWarningEnd = true;
+        
     }
 
 
